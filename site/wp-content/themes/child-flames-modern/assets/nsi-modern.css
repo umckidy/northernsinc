@@ -1,8 +1,8 @@
 /*
-  Northerns Inc modern layer (child theme)
+  Northerns Inc modern layer
 
-  Scoped with body.nsi-modern so you can flip back to Catch Flames
-  without side effects.
+  This stylesheet intentionally overrides the stock Catch Flames presentation
+  without changing WordPress content structure.
 */
 
 body.nsi-modern {
@@ -30,12 +30,14 @@ body.nsi-modern.custom-background {
   background-blend-mode: multiply;
 }
 
+/* Reduce jank on mobile when theme uses fixed background. */
 @media (max-width: 900px) {
   body.nsi-modern.custom-background {
     background-attachment: scroll !important;
   }
 }
 
+/* Add a subtle overlay to improve readability on busy backgrounds. */
 body.nsi-modern.custom-background:before {
   content: "";
   position: fixed;
@@ -48,11 +50,13 @@ body.nsi-modern.custom-background:before {
   z-index: 0;
 }
 
+/* Ensure page content sits above overlay. */
 body.nsi-modern #page {
   position: relative;
   z-index: 1;
 }
 
+/* Constrain and modernize the layout width. */
 body.nsi-modern .wrapper {
   width: min(1120px, calc(100% - 40px));
 }
@@ -63,7 +67,7 @@ body.nsi-modern .wrapper {
   }
 }
 
-/* Header + title */
+/* Header: glassy bar, show title again even if WP custom header hides it. */
 body.nsi-modern #branding {
   background: transparent;
 }
@@ -115,7 +119,6 @@ body.nsi-modern #logo-wrap {
   gap: 14px;
 }
 
-/* Re-show title if custom header setting hides it. */
 body.nsi-modern #site-details {
   position: static !important;
   clip: auto !important;
@@ -144,7 +147,7 @@ body.nsi-modern #site-description {
   text-transform: uppercase;
 }
 
-/* Header menu: top-level only. */
+/* Menu bar */
 body.nsi-modern #header-menu {
   background: rgba(251, 250, 246, 0.10);
   backdrop-filter: blur(10px);
@@ -228,6 +231,11 @@ body.nsi-modern .entry-title a {
   color: var(--nsi-ink);
 }
 
+body.nsi-modern .entry-content,
+body.nsi-modern .entry-summary {
+  padding-top: 14px;
+}
+
 body.nsi-modern .entry-content p,
 body.nsi-modern .entry-summary p {
   color: var(--nsi-ink-soft);
@@ -235,7 +243,14 @@ body.nsi-modern .entry-summary p {
   line-height: 1.75;
 }
 
-/* Gutenberg buttons */
+body.nsi-modern .entry-content h2,
+body.nsi-modern .entry-content h3,
+body.nsi-modern .entry-content h4 {
+  font-family: Fraunces, Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+/* Buttons (Gutenberg) */
 body.nsi-modern .wp-block-button__link {
   background: linear-gradient(135deg, var(--nsi-water), var(--nsi-pine));
   color: #fff;
@@ -249,6 +264,22 @@ body.nsi-modern .wp-block-button__link {
   padding: 14px 18px;
 }
 
+body.nsi-modern .wp-block-button__link:hover,
+body.nsi-modern .wp-block-button__link:focus {
+  text-decoration: none;
+  filter: brightness(1.04);
+}
+
+/* Lists */
+body.nsi-modern .entry-content ul.wp-block-list {
+  margin-left: 22px;
+}
+
+body.nsi-modern .entry-content ul.wp-block-list li {
+  margin: 10px 0;
+}
+
+/* "What We Do" columns: cardify */
 body.nsi-modern .wp-block-columns {
   gap: 18px;
 }
@@ -258,6 +289,10 @@ body.nsi-modern .wp-block-column {
   border: 1px solid rgba(16, 33, 28, 0.10);
   border-radius: var(--nsi-radius-sm);
   padding: 18px 18px 8px;
+}
+
+body.nsi-modern .wp-block-column h3 {
+  margin-top: 0;
 }
 
 /* Home: remove redundant sidebar and let content breathe */
