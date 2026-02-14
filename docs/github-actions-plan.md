@@ -21,6 +21,14 @@ Use GitHub Actions to deploy only the child theme to the VM over SSH + rsync.
 3. Workflow connects to VM and syncs `site/wp-content/themes/catch-flames-child/`
 4. Workflow fixes ownership/permissions and verifies HTTPS response
 
+## NGINX config management
+
+The production NGINX site config is tracked under `infra/nginx/sites-available/northernsinc.org.prod` and deployed via `Deploy NGINX Config`.
+
+- The workflow uploads the file to `/tmp/northernsinc.org.prod` and then installs it into `/etc/nginx/sites-available/northernsinc.org.prod`
+- It runs `nginx -t` before reloading
+- It keeps a timestamped backup under `/etc/nginx/sites-available/backup-<timestamp>/`
+
 ## Required GitHub Secrets
 
 Add these in repository or `production` environment secrets:

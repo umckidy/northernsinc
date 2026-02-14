@@ -18,3 +18,6 @@ Grandpa's Website Build Doc.md
 # Optional local env files
 .env
 .env.*
+
+# Temporary local tokens
+token.txt

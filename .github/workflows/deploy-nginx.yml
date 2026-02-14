@@ -1,0 +1,71 @@
+name: Deploy NGINX Config
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Load SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.VM_SSH_KEY }}
+
+      - name: Configure known hosts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "${{ secrets.VM_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Upload NGINX site configs
+        env:
+          VM_HOST: ${{ secrets.VM_HOST }}
+          VM_USER: ${{ secrets.VM_USER }}
+          VM_PORT: ${{ secrets.VM_PORT }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          port="${VM_PORT:-22}"
+          rsync -az \
+            -e "ssh -p ${port} -o StrictHostKeyChecking=yes" \
+            infra/nginx/sites-available/northernsinc.org.prod \
+            "${VM_USER}@${VM_HOST}:/tmp/northernsinc.org.prod"
+
+      - name: Install configs and reload nginx
+        env:
+          VM_HOST: ${{ secrets.VM_HOST }}
+          VM_USER: ${{ secrets.VM_USER }}
+          VM_PORT: ${{ secrets.VM_PORT }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          port="${VM_PORT:-22}"
+          ssh -p "${port}" "${VM_USER}@${VM_HOST}" '
+            set -euo pipefail
+            ts=$(date +%F_%H%M%S)
+            backup_dir=/etc/nginx/sites-available/backup-${ts}
+
+            sudo mkdir -p "$backup_dir"
+            sudo cp -a /etc/nginx/sites-available/northernsinc.org.prod "$backup_dir/" 2>/dev/null || true
+
+            sudo install -m 0644 /tmp/northernsinc.org.prod /etc/nginx/sites-available/northernsinc.org.prod
+
+            sudo ln -sf /etc/nginx/sites-available/northernsinc.org.prod /etc/nginx/sites-enabled/northernsinc.org.prod
+
+            if ! sudo nginx -t; then
+              echo "nginx -t failed; restoring backup" >&2
+              sudo cp -a "$backup_dir/northernsinc.org.prod" /etc/nginx/sites-available/northernsinc.org.prod 2>/dev/null || true
+              sudo nginx -t
+              exit 1
+            fi
+
+            sudo systemctl reload nginx
+          '
