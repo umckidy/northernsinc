@@ -1,0 +1,62 @@
+name: Deploy Production
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'site/wp-content/themes/catch-flames-child/**'
+      - '.github/workflows/deploy-prod.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Load SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.VM_SSH_KEY }}
+
+      - name: Configure known hosts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "${{ secrets.VM_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Sync child theme to VM
+        env:
+          VM_HOST: ${{ secrets.VM_HOST }}
+          VM_USER: ${{ secrets.VM_USER }}
+          VM_PORT: ${{ secrets.VM_PORT }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          port="${VM_PORT:-22}"
+          rsync -az --delete \
+            -e "ssh -p ${port} -o StrictHostKeyChecking=yes" \
+            site/wp-content/themes/catch-flames-child/ \
+            "${VM_USER}@${VM_HOST}:/tmp/catch-flames-child/"
+
+      - name: Activate synced theme files
+        env:
+          VM_HOST: ${{ secrets.VM_HOST }}
+          VM_USER: ${{ secrets.VM_USER }}
+          VM_PORT: ${{ secrets.VM_PORT }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          port="${VM_PORT:-22}"
+          ssh -p "${port}" "${VM_USER}@${VM_HOST}" \
+            "sudo rsync -az --delete /tmp/catch-flames-child/ /var/www/html/northernsinc.org/wp-content/themes/catch-flames-child/ && sudo chown -R www-data:www-data /var/www/html/northernsinc.org/wp-content/themes/catch-flames-child && sudo find /var/www/html/northernsinc.org/wp-content/themes/catch-flames-child -type d -exec chmod 755 {} \\; && sudo find /var/www/html/northernsinc.org/wp-content/themes/catch-flames-child -type f -exec chmod 644 {} \\;"
+
+      - name: Verify homepage health
+        shell: bash
+        run: curl -fI https://northernsinc.org

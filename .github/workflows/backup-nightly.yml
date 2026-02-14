@@ -1,0 +1,47 @@
+name: Backup Nightly
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * *'
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Load SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.VM_SSH_KEY }}
+
+      - name: Configure known hosts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "${{ secrets.VM_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Run backup on VM
+        env:
+          VM_HOST: ${{ secrets.VM_HOST }}
+          VM_USER: ${{ secrets.VM_USER }}
+          VM_PORT: ${{ secrets.VM_PORT }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          port="${VM_PORT:-22}"
+          ssh -p "${port}" "${VM_USER}@${VM_HOST}" '
+            set -euo pipefail
+            ts=$(date +%F_%H%M%S)
+            out_dir=/var/backups/northernsinc
+            sudo mkdir -p "$out_dir"
+            sudo mysqldump northernsinc_db | gzip > "/tmp/northernsinc_db_${ts}.sql.gz"
+            sudo tar -czf "/tmp/northernsinc_theme_${ts}.tar.gz" -C /var/www/html/northernsinc.org/wp-content/themes catch-flames-child
+            sudo mv "/tmp/northernsinc_db_${ts}.sql.gz" "$out_dir/"
+            sudo mv "/tmp/northernsinc_theme_${ts}.tar.gz" "$out_dir/"
+            sudo find "$out_dir" -type f -mtime +30 -delete
+            sudo ls -lh "$out_dir"
+          '

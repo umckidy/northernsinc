@@ -1,0 +1,20 @@
+# Local/private ops notes that may contain secrets
+Grandpa's Website Build Doc.md
+*.private.md
+
+# WordPress secrets and backups
+**/wp-config.php
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+
+# Runtime files
+**/error_log
+**/cache/
+**/upgrade/
+**/upgrade-temp-backup/
+
+# Optional local env files
+.env
+.env.*
