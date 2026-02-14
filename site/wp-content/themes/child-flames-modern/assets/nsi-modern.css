@@ -72,6 +72,43 @@ body.nsi-modern #header-content {
   padding: 22px 0 10px;
 }
 
+/* Header search (top-right widget) */
+body.nsi-modern #sidebar-header-right {
+  float: none;
+}
+
+body.nsi-modern #sidebar-header-right .widget {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.nsi-modern #sidebar-header-right #searchform {
+  margin: 0;
+}
+
+body.nsi-modern #sidebar-header-right #searchform input#s {
+  width: 220px;
+  max-width: 55vw;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  padding: 10px 14px;
+}
+
+body.nsi-modern #sidebar-header-right #searchform input#s::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+@media (max-width: 900px) {
+  body.nsi-modern #sidebar-header-right #searchform input#s {
+    width: 160px;
+  }
+}
+
 body.nsi-modern #logo-wrap {
   display: flex;
   align-items: center;
@@ -221,6 +258,63 @@ body.nsi-modern .wp-block-column {
   border: 1px solid rgba(16, 33, 28, 0.10);
   border-radius: var(--nsi-radius-sm);
   padding: 18px 18px 8px;
+}
+
+/* Home: remove redundant sidebar and let content breathe */
+@media (min-width: 900px) {
+  body.nsi-modern.home #secondary {
+    display: none;
+  }
+
+  body.nsi-modern.home #primary {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Sidebar: keep newsletter, hide duplicated menu widget */
+@media (min-width: 900px) {
+  body.nsi-modern #secondary .widget.widget_nav_menu {
+    display: none;
+  }
+}
+
+/* Footer */
+body.nsi-modern #footer-sidebar,
+body.nsi-modern #site-generator {
+  background: rgba(11, 31, 27, 0.86);
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+body.nsi-modern #site-generator {
+  color: rgba(251, 250, 246, 0.80);
+}
+
+/* Hide upstream theme credit for a cleaner footer. */
+body.nsi-modern #site-generator .powered {
+  display: none;
+}
+
+body.nsi-modern #site-generator a {
+  color: rgba(251, 250, 246, 0.95);
+}
+
+/* Forms */
+body.nsi-modern input[type="text"],
+body.nsi-modern input[type="email"],
+body.nsi-modern input[type="url"],
+body.nsi-modern input[type="password"],
+body.nsi-modern textarea {
+  border-radius: 10px;
+  border: 1px solid rgba(16, 33, 28, 0.16);
+  padding: 10px 12px;
+}
+
+body.nsi-modern .widget .widget-title {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  border-bottom-color: rgba(16, 33, 28, 0.18);
 }
 
 /* Prefer reduced motion */
