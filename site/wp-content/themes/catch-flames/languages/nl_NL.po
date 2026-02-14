@@ -1,0 +1,1535 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Catch Flames\n"
+"Report-Msgid-Bugs-To: https://catchthemes.com/contact-us/\n"
+"POT-Creation-Date: 2025-12-10 21:04+0545\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Yoshi van den Akker <yoshivda@gmail.com>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;esc_attr_e;esc_attr__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:14
+msgid "Error 404 - Page Not Found."
+msgstr "Error 404 - Pagina niet gevonden"
+
+#: ../404.php:18
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr "Het lijkt erop dat we niet kunnen vinden wat je zoekt."
+
+#: ../404.php:19
+msgid "This might be because:"
+msgstr "Dit kan zijn omdat:"
+
+#: ../404.php:20
+msgid ""
+"You have typed the web address incorrectly, or the page you were looking for "
+"may have been moved, updated or deleted."
+msgstr ""
+"Je het webadres verkeerd getypt hebt, of de pagina waarnaar je zocht "
+"verplaatst, geupdatet of verwijderd is."
+
+#: ../404.php:21
+msgid "Please try the following options instead:"
+msgstr "Probeer het volgende:"
+
+#: ../404.php:22
+msgid ""
+"Check for a mis-typed URL error, then press the refresh button on your "
+"browser or Use the search box below."
+msgstr ""
+"Kijk of de het webadres geen typfouten bevat, klik op de vernieuw-knop in de "
+"browser of gebruik de zoekfunctie hieronder"
+
+#: ../archive.php:42 ../author.php:69 ../category.php:45 ../index.php:31
+#: ../search.php:39 ../tag.php:45 ../template-blog.php:65
+msgid "Nothing Found"
+msgstr "Geen resultaten"
+
+#: ../archive.php:46 ../author.php:73 ../category.php:49 ../index.php:35
+#: ../tag.php:49 ../template-blog.php:69
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+"Het spijt ons, maar er waren geen resultaten voor het opgevraagde archief. "
+"Wellicht helpt het om te zoeken naar een verwant bericht."
+
+#: ../author.php:25
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Archieven per auteur: %s"
+
+#: ../author.php:44 ../content-single.php:78
+#, php-format
+msgid "About %s"
+msgstr "Over %s"
+
+#: ../category.php:16
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Archieven per categorie: %s"
+
+#: ../comments.php:17
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Dit bericht is beveiligd met een wachtwoord. Voer het wachtwoord in om "
+"reacties te kunnen lezen."
+
+#: ../comments.php:36
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../comments.php:56 ../comments.php:76
+msgid "Comment navigation"
+msgstr "Navigatie door reacties"
+
+#: ../comments.php:57 ../comments.php:77
+msgid "&larr; Older Comments"
+msgstr "&larr; Oudere reacties"
+
+#: ../comments.php:58 ../comments.php:78
+msgid "Newer Comments &rarr;"
+msgstr "Nieuwe reacties &rarr;"
+
+#: ../comments.php:88
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: ../content-aside.php:18 ../content-featured.php:14 ../content-gallery.php:18
+#: ../content-gallery.php:50 ../content-image.php:18 ../content-link.php:18
+#: ../content-page.php:13 ../content-quote.php:16 ../content-status.php:17
+#: ../content.php:31 ../content.php:35 ../inc/catchflames-functions.php:905
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink naar %s"
+
+#: ../content-aside.php:19
+msgid "Aside"
+msgstr "Aan de zijkant"
+
+#: ../content-aside.php:24 ../content-aside.php:50 ../content-gallery.php:95
+#: ../content-image.php:72 ../content-link.php:24 ../content-link.php:50
+#: ../content-quote.php:25 ../content-quote.php:78 ../content-single.php:23
+#: ../content-status.php:23 ../content-status.php:51 ../content.php:44
+#: ../content.php:110
+msgid "Leave a reply"
+msgstr "Laat een reactie achter"
+
+#: ../content-aside.php:24 ../content-aside.php:50 ../content-gallery.php:95
+#: ../content-image.php:72 ../content-link.php:24 ../content-link.php:50
+#: ../content-quote.php:25 ../content-quote.php:78 ../content-single.php:23
+#: ../content-status.php:23 ../content-status.php:51 ../content.php:44
+#: ../content.php:110
+msgid "1 Comment &darr;"
+msgstr "1 reactie &darr;"
+
+#: ../content-aside.php:24 ../content-aside.php:50 ../content-gallery.php:95
+#: ../content-image.php:72 ../content-link.php:24 ../content-link.php:50
+#: ../content-quote.php:25 ../content-quote.php:78 ../content-single.php:23
+#: ../content-status.php:23 ../content-status.php:51 ../content.php:44
+#: ../content.php:110
+msgid "% Comments &darr;"
+msgstr "% reacties &darr;"
+
+#: ../content-aside.php:35 ../content-gallery.php:34 ../content-link.php:35
+#: ../content-quote.php:38 ../content-status.php:36
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lees verder <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../content-aside.php:37 ../content-featured.php:24 ../content-gallery.php:57
+#: ../content-image.php:31 ../content-link.php:37 ../content-page.php:22
+#: ../content-quote.php:40 ../content-single.php:33 ../content-status.php:38
+#: ../content.php:69 ../image.php:90
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: ../content-aside.php:52 ../content-featured.php:51 ../content-gallery.php:98
+#: ../content-image.php:76 ../content-link.php:52 ../content-page.php:30
+#: ../content-quote.php:81 ../content-single.php:66 ../content-status.php:53
+#: ../content.php:113 ../image.php:100 ../inc/catchflames-functions.php:400
+msgid "Edit"
+msgstr "Wijzig"
+
+#: ../content-featured.php:35 ../content-featured.php:44
+#: ../content-gallery.php:70 ../content-gallery.php:80 ../content-image.php:55
+#: ../content-image.php:64 ../content-quote.php:53 ../content-quote.php:63
+#: ../content-single.php:44 ../content-single.php:47 ../content.php:84
+#: ../content.php:94
+msgid ", "
+msgstr ", "
+
+#: ../content-featured.php:37
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Dit bericht was geplaatst in %1$s en getagd met %2$s. Bewaar de <a "
+"href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a> als "
+"bladwijzer."
+
+#: ../content-featured.php:39
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Dit bericht was geplaatst in %1$s. Bewaar de <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a> als bladwijzer."
+
+#: ../content-gallery.php:19
+msgid "Gallery"
+msgstr "Galerij"
+
+#: ../content-gallery.php:49
+#, php-format
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "Deze galerij bevat <a %1$s>%2$s foto</a>."
+msgstr[1] "Deze galerij bevat <a %1$s>%2$s foto's</a>."
+
+#: ../content-gallery.php:74 ../content-image.php:59 ../content-quote.php:57
+#: ../content.php:88
+#, php-format
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr "<span class=\"%1$s\">Geplaatst in</span> %2$s"
+
+#: ../content-gallery.php:86 ../content-image.php:67 ../content-quote.php:69
+#: ../content.php:100
+#, php-format
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr "<span class=\"%1$s\">Getagd met</span> %2$s"
+
+#: ../content-image.php:19
+msgid "Image"
+msgstr "Afbeelding"
+
+#: ../content-image.php:42
+#, php-format
+msgid ""
+"<a href=\"%1$s\" rel=\"bookmark\"><time class=\"entry-date\" "
+"datetime=\"%2$s\">%3$s</time></a><span class=\"by-author\"> <span "
+"class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" "
+"href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span></span>"
+msgstr ""
+"<a href=\"%1$s\" rel=\"bookmark\"><time class=\"entry-date\" "
+"datetime=\"%2$s\">%3$s</time></a><span class=\"by-author\"> <span "
+"class=\"sep\"> door </span> <span class=\"author vcard\"><a class=\"url fn "
+"n\" href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span></span>"
+
+#: ../content-image.php:47 ../inc/catchflames-functions.php:438
+#, php-format
+msgid "View all posts by %s"
+msgstr "Bekijk alle berichten van %s"
+
+#: ../content-link.php:19
+msgid "Link"
+msgstr "Link"
+
+#: ../content-quote.php:17
+msgid "Quote"
+msgstr "Quote"
+
+#: ../content-single.php:49
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s by <a href=\"%6$s\">%5$s</a>. "
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" "
+"rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Dit bericht was geplaatst in %1$s en getagd met %2$s by <a "
+"href=\"%6$s\">%5$s</a>. Bewaar de <a href=\"%3$s\" title=\"Permalink to "
+"%4$s\" rel=\"bookmark\">permalink</a> als bladwijzer."
+
+#: ../content-single.php:51
+#, php-format
+msgid ""
+"This entry was posted in %1$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a "
+"href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Dit bericht was geplaatst in %1$s door <a href=\"%6$s\">%5$s</a>. Bewaar de "
+"<a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a> "
+"als bladwijzer."
+
+#: ../content-single.php:53
+#, php-format
+msgid ""
+"This entry was posted by <a href=\"%6$s\">%5$s</a>. Bookmark the <a "
+"href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Dit bericht was geplaatst door <a href=\"%6$s\">%5$s</a>. Bewaar de <a "
+"href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a> als "
+"bladwijzer."
+
+#: ../content-single.php:82
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Bekijk alle berichten van %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../content-status.php:18
+msgid "Status"
+msgstr "Status"
+
+#: ../content.php:32
+msgid "Featured"
+msgstr "Uitgelicht"
+
+#: ../functions.php:167
+msgid "Fixed Header Top Menu"
+msgstr "Vast header top menu"
+
+#: ../functions.php:168
+msgid "Primary Menu"
+msgstr "Primair menu"
+
+#: ../image.php:18
+msgid "Image navigation"
+msgstr "Afbeeldingsnavigatie"
+
+#: ../image.php:19
+msgid "&larr; Previous"
+msgstr "&larr; Vorige"
+
+#: ../image.php:20
+msgid "Next &rarr;"
+msgstr "Volgnede &rarr;"
+
+#: ../image.php:30
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span "
+"class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</"
+"a>"
+msgstr ""
+"<span class=\"meta-prep meta-prep-entry-date\">Gepubliceerd </span> <span "
+"class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></"
+"span> op <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</"
+"a>"
+
+#: ../inc/catchflames-featured-content.php:52
+#: ../inc/panel/customizer/customizer.php:172
+msgid "Featured Content"
+msgstr ""
+
+#: ../inc/catchflames-featured-content.php:53
+msgid ""
+"Here you can showcase the x number of Featured Content. You can edit this "
+"Headline, Subheadline and Feaured Content from \"Appearance -> Customize -> "
+"Featured Content Options\"."
+msgstr ""
+
+#: ../inc/catchflames-featured-content.php:239
+msgid "Permalink to: "
+msgstr ""
+
+#: ../inc/catchflames-functions.php:281 ../single.php:18
+msgid "Post navigation"
+msgstr "Bericht navigatie"
+
+#: ../inc/catchflames-functions.php:289 ../template-blog.php:53
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Oudere berichten"
+
+#: ../inc/catchflames-functions.php:290 ../template-blog.php:54
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nieuwere berichten <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../inc/catchflames-functions.php:368
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../inc/catchflames-functions.php:368
+msgid "(Edit)"
+msgstr "(Wijzig)"
+
+#: ../inc/catchflames-functions.php:383
+msgid "Post author"
+msgstr "Auteur van het bericht"
+
+#: ../inc/catchflames-functions.php:389
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s op %2$s"
+
+#: ../inc/catchflames-functions.php:395
+msgid "Your comment is awaiting moderation."
+msgstr "Je reactie wacht op moderatie"
+
+#: ../inc/catchflames-functions.php:404
+msgid "Reply"
+msgstr "Reageer"
+
+#: ../inc/catchflames-functions.php:432
+#, php-format
+msgid ""
+"<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" "
+"rel=\"bookmark\"><time class=\"entry-date updated\" datetime=\"%3$s\" "
+"pubdate>%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </"
+"span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" "
+"title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+"<span class=\"sep\">Geplaatst op </span><a href=\"%1$s\" title=\"%2$s\" "
+"rel=\"bookmark\"><time class=\"entry-date updated\" datetime=\"%3$s\" "
+"pubdate>%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> door "
+"</span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" "
+"title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#: ../inc/catchflames-functions.php:551
+msgid "ID"
+msgstr "ID"
+
+#: ../inc/catchflames-functions.php:713
+#: ../inc/panel/customizer/customizer.php:601
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../inc/catchflames-functions.php:718
+#: ../inc/panel/customizer/customizer.php:611
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../inc/catchflames-functions.php:723
+#: ../inc/panel/customizer/customizer.php:621
+msgid "Google+"
+msgstr "Google+"
+
+#: ../inc/catchflames-functions.php:728
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: ../inc/catchflames-functions.php:733
+#: ../inc/panel/customizer/customizer.php:631
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../inc/catchflames-functions.php:738
+msgid "YouTube"
+msgstr "YouTube"
+
+#: ../inc/catchflames-functions.php:743
+#: ../inc/panel/customizer/customizer.php:651
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../inc/catchflames-functions.php:748
+#: ../inc/panel/customizer/customizer.php:671
+msgid "AIM"
+msgstr "AIM"
+
+#: ../inc/catchflames-functions.php:753
+#: ../inc/panel/customizer/customizer.php:681
+msgid "MySpace"
+msgstr "MySpace"
+
+#: ../inc/catchflames-functions.php:758
+#: ../inc/panel/customizer/customizer.php:691
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../inc/catchflames-functions.php:763
+#: ../inc/panel/customizer/customizer.php:701
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../inc/catchflames-functions.php:768
+#: ../inc/panel/customizer/customizer.php:711
+msgid "deviantART"
+msgstr "deviantART"
+
+#: ../inc/catchflames-functions.php:773
+#: ../inc/panel/customizer/customizer.php:721
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../inc/catchflames-functions.php:778 ../inc/catchflames-functions.php:1198
+#: ../inc/panel/customizer/customizer.php:731
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../inc/catchflames-functions.php:783
+#: ../inc/panel/customizer/customizer.php:741
+msgid "RSS"
+msgstr "RSS"
+
+#: ../inc/catchflames-functions.php:788
+#: ../inc/panel/customizer/customizer.php:751
+msgid "Slideshare"
+msgstr "Slideshare"
+
+#: ../inc/catchflames-functions.php:793
+#: ../inc/panel/customizer/customizer.php:761
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../inc/catchflames-functions.php:798
+#: ../inc/panel/customizer/customizer.php:771
+msgid "Skype"
+msgstr "Skype"
+
+#: ../inc/catchflames-functions.php:803
+#: ../inc/panel/customizer/customizer.php:781
+msgid "Soundcloud"
+msgstr "Soundcloud"
+
+#: ../inc/catchflames-functions.php:808
+#: ../inc/panel/customizer/customizer.php:791
+msgid "Email"
+msgstr "Email"
+
+#: ../inc/catchflames-functions.php:813
+#: ../inc/panel/customizer/customizer.php:801
+msgid "Contact"
+msgstr "Contact"
+
+#: ../inc/catchflames-functions.php:818
+#: ../inc/panel/customizer/customizer.php:811
+msgid "Xing"
+msgstr "Xing"
+
+#: ../inc/catchflames-functions.php:823
+msgid "SpecificFeeds"
+msgstr "SpecificFeeds"
+
+#: ../inc/catchflames-functions.php:828
+#: ../inc/panel/customizer/customizer.php:830
+msgid "Meetup"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:833
+#: ../inc/panel/customizer/customizer.php:840
+msgid "Goodreads"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:838
+#: ../inc/panel/customizer/customizer.php:850
+msgid "github"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:843
+#: ../inc/panel/customizer/customizer.php:860
+msgid "VK"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:848
+#: ../inc/panel/customizer/customizer.php:870
+msgid "Spotify"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:853
+#: ../inc/panel/customizer/customizer.php:880
+msgid "Threads"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:858
+#: ../inc/panel/customizer/customizer.php:890
+msgid "Bluesky"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:863
+#: ../inc/panel/customizer/customizer.php:900
+msgid "Tiktok"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:1177
+msgid "Y"
+msgstr "Y"
+
+#: ../inc/catchflames-functions.php:1208
+#, fuzzy
+#| msgid "Theme: Catch Flames by "
+msgid "Theme: Catch Flames Pro"
+msgstr "Thema: Catch Flames door "
+
+#: ../inc/catchflames-functions.php:1217 ../inc/catchflames-functions.php:1220
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../inc/catchflames-functions.php:1217 ../inc/catchflames-functions.php:1220
+#, fuzzy
+#| msgid "All Rights Reserved"
+msgid "All Rights Reserved."
+msgstr "Alle rechten voorbehouden"
+
+#: ../inc/catchflames-functions.php:1241
+msgid "Catch Themes"
+msgstr "Catch Themes"
+
+#: ../inc/catchflames-menus.php:46 ../inc/catchflames-menus.php:162
+#: ../inc/catchflames-menus.php:168
+msgid "Menu"
+msgstr "Menu"
+
+#: ../inc/catchflames-menus.php:55
+msgid "Connect"
+msgstr "Verbind"
+
+#: ../inc/catchflames-menus.php:111
+msgid "Primary menu"
+msgstr "Primair menu"
+
+#: ../inc/catchflames-menus.php:113
+msgid "Skip to primary content"
+msgstr "Ga verder naar primaire content"
+
+#: ../inc/catchflames-menus.php:114
+msgid "Skip to secondary content"
+msgstr "Ga verder naar secundaire content"
+
+#: ../inc/catchflames-slider.php:176
+msgid ""
+"You have selected Page Slider but you haven't added the Page ID in "
+"\"Appearance => Theme Options => Featured Slider => Featured Page Slider "
+"Options\""
+msgstr ""
+"Je hebt een paginaslider geselecteerd, maar je hebt geen pagina-ID ingevuld "
+"in \"Weergave => Thema-instellingen => Uitgelichte slider => Opties voor "
+"uitgelichte paginaslider\""
+
+#: ../inc/catchflames-widgets.php:10
+msgid "Primary Sidebar"
+msgstr "Primaire sidebar"
+
+#: ../inc/catchflames-widgets.php:12
+msgid ""
+"This is the primary sidebar if you are using a two or three column site "
+"layout option."
+msgstr ""
+"Dit is de primaire sidebar als je twee of drie kolommen gebruikt als layout."
+
+#: ../inc/catchflames-widgets.php:21
+msgid "Secondary Sidebar"
+msgstr "Secundaire sidebar"
+
+#: ../inc/catchflames-widgets.php:23
+msgid ""
+"This is the secondary sidebar if you are using a three column site layout "
+"option."
+msgstr ""
+"Dit is de secundaire sidebar als je twee of drie kolommen gebruikt als "
+"layout."
+
+#: ../inc/catchflames-widgets.php:33
+msgid "WooCommerce Sidebar"
+msgstr "WooCommerce Sidebar"
+
+#: ../inc/catchflames-widgets.php:44
+msgid "Footer Area One"
+msgstr "Footerruimte 1"
+
+#: ../inc/catchflames-widgets.php:46 ../inc/catchflames-widgets.php:57
+#: ../inc/catchflames-widgets.php:68
+msgid "An optional widget area for your site footer"
+msgstr "Een optionele widgetruimte voor je footer"
+
+#: ../inc/catchflames-widgets.php:55
+msgid "Footer Area Two"
+msgstr "Footerruimte 2"
+
+#: ../inc/catchflames-widgets.php:66
+msgid "Footer Area Three"
+msgstr "Footerruimte 3"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:17 ../searchform.php:19
+msgid "Search"
+msgstr "Zoeken"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:95
+msgid "Continue Reading"
+msgstr "Lees verder"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:116
+msgid "Light"
+msgstr "Licht"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:117
+msgid "Dark"
+msgstr "Donker"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:130
+#: ../inc/panel/catchflames-themeoptions-defaults.php:179
+msgid "Homepage"
+msgstr "Homepagina"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:131
+msgid "Excluding Homepage"
+msgstr "Homepagina uitgezonderd"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:132
+#: ../inc/panel/catchflames-themeoptions-defaults.php:180
+msgid "Entire Site"
+msgstr "Gehele site"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:133
+msgid "Entire Site, Page/Post Featured Image"
+msgstr "Gehele site, uitgelichte afbeelding voor pagina/bericht"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:134
+msgid "Pages & Posts"
+msgstr "Pagina's & berichten"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:135
+#: ../inc/panel/catchflames-themeoptions-defaults.php:181
+msgid "Disable"
+msgstr "Uitschakelen"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:148
+msgid "Right Sidebar"
+msgstr "Rechter sidebar"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:149
+msgid "Left Sidebar"
+msgstr "Linker sidebar"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:150
+msgid "No Sidebar"
+msgstr "Geen sidebar"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:151
+msgid "Three Columns"
+msgstr "Drie kolommen"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:165
+msgid "Full Content Display"
+msgstr "Volledige content display"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:166
+msgid "Excerpt/Blog Display"
+msgstr "Excerpt/blog display"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:194
+#: ../inc/panel/catchflames-themeoptions-defaults.php:208
+msgid "Demo"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:195
+#: ../inc/panel/catchflames-themeoptions-defaults.php:209
+#, fuzzy
+#| msgid "Pages:"
+msgid "Page"
+msgstr "Pagina's:"
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:237
+msgid "Show Excerpt"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:238
+msgid "Show Full Content"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:239
+msgid "Hide Content"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:34
+msgid "All Categories"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:48
+msgid ""
+"Hold down the Ctrl (windows) / Command (Mac) button to select multiple "
+"options."
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:61
+msgid "Theme Instructions"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:65
+msgid "Support"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:69
+msgid "Changelog"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:73
+msgid "Donate Now"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:77
+msgid "Review"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:33
+msgid "Theme Options"
+msgstr "Thema-instellingen"
+
+#: ../inc/panel/customizer/customizer.php:34
+msgid "Basic theme Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:38
+msgid "Fixed Header Top Options"
+msgstr "Vaste header top opties"
+
+#: ../inc/panel/customizer/customizer.php:39
+msgid ""
+"Fixed Header Top Menu : You need to create custom menu and then assign menu "
+"location as Featured Header Top Menu. For more go to Menu Option"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:43
+msgid "Header Options"
+msgstr "Header-opties"
+
+#: ../inc/panel/customizer/customizer.php:48
+msgid "Search Options"
+msgstr "Zoekinstellingen"
+
+#: ../inc/panel/customizer/customizer.php:58
+msgid "Layout Options"
+msgstr "Layoutopties"
+
+#: ../inc/panel/customizer/customizer.php:63
+msgid "Homepage / Frontpage Category Setting"
+msgstr "Homepagina/voorpagina categorie-instelling"
+
+#: ../inc/panel/customizer/customizer.php:68
+msgid "Excerpt / More Tag Settings"
+msgstr "Afbraak/Meer-tag instellingen"
+
+#: ../inc/panel/customizer/customizer.php:73
+msgid "Feed Redirect"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:78
+msgid "Custom CSS"
+msgstr "Aangepaste CSS"
+
+#: ../inc/panel/customizer/customizer.php:83
+msgid "Scroll Up"
+msgstr "Scroll naar boven"
+
+#: ../inc/panel/customizer/customizer.php:88
+#, fuzzy
+#| msgid "Slider Options"
+msgid "Fitvid Options"
+msgstr "Sliderinstellingen"
+
+#: ../inc/panel/customizer/customizer.php:95
+#: ../inc/panel/customizer/customizer.php:96
+msgid "Featured Slider"
+msgstr "Uitgelichte slider"
+
+#: ../inc/panel/customizer/customizer.php:100
+msgid "Slider Options"
+msgstr "Sliderinstellingen"
+
+#: ../inc/panel/customizer/customizer.php:108
+#: ../inc/panel/customizer/customizer.php:113
+msgid "Social Links"
+msgstr "Sociale links"
+
+#: ../inc/panel/customizer/customizer.php:109
+msgid "Add your social links here"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:120
+#: ../inc/panel/customizer/customizer.php:125
+msgid "Tools"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:121
+#: ../inc/panel/customizer/customizer.php:126
+#, php-format
+msgid ""
+"Tools falls under Plugins Territory according to Theme Review Guidelines in "
+"WordPress.org. This feature will be depreciated in future versions from "
+"Catch Flames free version. If you want this feature, then you can add <a "
+"target=\"_blank\" href=\"%s\">Catch Web Tools</a>  plugin."
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:170
+msgid "Featured Content Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:180
+msgid "Extra Menu Options specific to this theme"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:182
+msgid "Menu Options"
+msgstr "Menu-instellingen"
+
+#: ../inc/panel/customizer/customizer.php:190
+msgid "Check to Disable Default Page Menu"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:226
+msgid "Appropriate Words: 15"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:287
+msgid "Check to Enable Fixed Header Top"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:297
+msgid "Check to Disable Logo in Fixed Header Top"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:307
+msgid "Logo in Fixed Header Top"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:319
+msgid "Enable Featured Header Image on"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:329
+msgid "Featured Header Image Alt/Title Tag"
+msgstr "Uitgelichte header afbeelding alt/title tag"
+
+#: ../inc/panel/customizer/customizer.php:338
+msgid "Featured Header Image Link URL"
+msgstr "Uitgelichte afbeelding header link URL"
+
+#: ../inc/panel/customizer/customizer.php:347
+msgid "Check to Reset Header Featured Image Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:348
+#: ../inc/panel/customizer/customizer.php:394
+#: ../inc/panel/customizer/customizer.php:445
+msgid "Please refresh the customizer after saving if reset option is used"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:359
+msgid "Default Display Text in Search"
+msgstr "Standaard tekst in Zoeken"
+
+#: ../inc/panel/customizer/customizer.php:371
+msgid "Sidebar Layout Options"
+msgstr "Layout-opties voor sidebar"
+
+#: ../inc/panel/customizer/customizer.php:382
+msgid "Archive Content Layout"
+msgstr "Contentarchief layout"
+
+#: ../inc/panel/customizer/customizer.php:393
+msgid "Check to Reset Layout"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:406
+msgid "Front page posts categories:"
+msgstr "Categorie voor berichten op homepagina:"
+
+#: ../inc/panel/customizer/customizer.php:407
+msgid ""
+"Only posts that belong to the categories selected here will be displayed on "
+"the front page"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:418
+msgid "More Tag Text"
+msgstr "Meer-tag tekst"
+
+#: ../inc/panel/customizer/customizer.php:428
+msgid "Excerpt length(words)"
+msgstr "Afbraaklengte (woorden)"
+
+#: ../inc/panel/customizer/customizer.php:444
+msgid "Check to Reset Excerpt"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:457
+msgid "Enter your custom CSS styles"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:469
+msgid "Check to Disable Scroll Up"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:480
+#, fuzzy
+#| msgid "Check to enable"
+msgid "Check to enable Fitvid"
+msgstr "Vink aan om in te schakelen"
+
+#: ../inc/panel/customizer/customizer.php:492
+msgid "Default Color Scheme"
+msgstr "Standaard kleurschema"
+
+#: ../inc/panel/customizer/customizer.php:504
+msgid "Enable Slider"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:515
+msgid "Transition Delay"
+msgstr "Overgangsvertraging"
+
+#: ../inc/panel/customizer/customizer.php:532
+msgid "Transition Length"
+msgstr "Overgangslengte"
+
+#: ../inc/panel/customizer/customizer.php:561
+msgid "Number of Slides"
+msgstr "Aantal slides"
+
+#: ../inc/panel/customizer/customizer.php:562
+msgid ""
+"Customizer page needs to be refreshed after saving if number of slides is "
+"changed"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:578
+msgid "Select Slider Type"
+msgstr "Selecteer slidertype"
+
+#: ../inc/panel/customizer/customizer.php:592
+msgid "Check to Enable Social Icons in Footer"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:641
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../inc/panel/customizer/customizer.php:661
+msgid "LinkedIn"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:821
+msgid "Check to Enable SpecificFeeds"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1011
+msgid "Check to Disable Header Logo"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1021
+msgid "Logo"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1195
+#, php-format
+msgid "Featured Page Slider #%s"
+msgstr "Uitgelichte pagina slider #%s"
+
+#: ../inc/panel/customizer/customizer.php:1222
+#, php-format
+msgid "Featured Page Content #%s"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1234
+msgid ""
+"Caution: Reset all settings to default. Refresh the page after save to view "
+"full effects."
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1236
+msgid "Reset all settings"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1247
+msgid "Check to reset all settings to default"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1257
+#: ../inc/panel/customizer/customizer.php:1268
+msgid "Important Links"
+msgstr ""
+
+#: ../search.php:15
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: ../search.php:43
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Sorry, maar er zijn geen resultaten met deze zoekcriteria. Probeer het nog "
+"eens met andere zoekwoorden."
+
+#: ../sidebar-third.php:57
+msgid "Secondary Sidebar Widget Area"
+msgstr "Secundaire sidebar widgetruimte"
+
+#: ../sidebar-third.php:59
+msgid ""
+"This is the Secondary Sidebar Widget Area if you are using a three column "
+"site layout option."
+msgstr ""
+"Dit is de secundaire widgetruimte in de sidebar als je drie kolommen "
+"gebruikt als layout."
+
+#: ../sidebar-third.php:60 ../sidebar.php:85
+#, php-format
+msgid ""
+"You can add content to this area by visiting your <a href=\"%s\">Widgets "
+"Panel</a> and adding new widgets to this area."
+msgstr ""
+"Je kunt hier content toevoegen door het <a href=\"%s\">Widgets Panel</a> te "
+"bezoeken en nieuwe widgets toe te voegen aan deze ruimte."
+
+#: ../sidebar.php:82
+msgid "Primary Sidebar Widget Area"
+msgstr "Primaire sidebar widgetruimte"
+
+#: ../sidebar.php:84
+msgid ""
+"This is the Primary Sidebar Widget Area if you are using a two or three "
+"column site layout option."
+msgstr ""
+"Dit is de primaire widgetruimte in de sidebar als je twee of drie kolommen "
+"gebruikt als layout."
+
+#: ../single.php:19
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Vorige"
+
+#: ../single.php:20
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Volgende <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../tag.php:16
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Tag archieven: %s"
+
+#~ msgid "fade"
+#~ msgstr "vervagen"
+
+#~ msgid "wipe"
+#~ msgstr "vegen"
+
+#~ msgid "scrollUp"
+#~ msgstr "scrollen naar boven"
+
+#~ msgid "scrollDown"
+#~ msgstr "scrollen naar beneden"
+
+#~ msgid "scrollLeft"
+#~ msgstr "scrollen naar links"
+
+#~ msgid "scrollRight"
+#~ msgstr "scrollen naar rechts"
+
+#~ msgid "blindX"
+#~ msgstr "dambord horizontaal"
+
+#~ msgid "blindY"
+#~ msgstr "dambord verticaal"
+
+#~ msgid "blindZ"
+#~ msgstr "dambord diagonaal"
+
+#~ msgid "cover"
+#~ msgstr "bedekken"
+
+#~ msgid "shuffle"
+#~ msgstr "willekeurig"
+
+#~ msgid "Catch Flames Options"
+#~ msgstr "Catch Flames opties"
+
+#~ msgid "Default Layout Set in <a href=\"%s\">Theme Settings</a>"
+#~ msgstr "Standaard layout ingesteld in <a href=\"%s\">Thema-instellingen</a>"
+
+#~ msgid "Three Columns (Style 1)"
+#~ msgstr "Drie kolommen (stijl 1)"
+
+#~ msgid "Right sidebar"
+#~ msgstr "Sidebar rechts"
+
+#~ msgid "Left sidebar"
+#~ msgstr "Sidebar links"
+
+#~ msgid "No sidebar"
+#~ msgstr "Geen sidebar"
+
+#~ msgid "Options Saved"
+#~ msgstr "Instellingen opgeslagen"
+
+#~ msgid "Theme Options By"
+#~ msgstr "Thema-instellingen door"
+
+#~ msgid "https://catchthemes.com/"
+#~ msgstr "https://catchthemes.com/"
+
+#~ msgid ""
+#~ "https://catchthemes.com/support-forum/forum/catch-flames-pro-premium/"
+#~ msgstr ""
+#~ "https://catchthemes.com/support-forum/forum/catch-flames-pro-premium/"
+
+#~ msgid "Support Forum"
+#~ msgstr "Support forum"
+
+#~ msgid "https://catchthemes.com/theme-instructions/catch-flames-pro/"
+#~ msgstr "https://catchthemes.com/theme-instructions/catch-flames-pro/"
+
+#~ msgid "Theme Instruction"
+#~ msgstr "Instructies voor het thema"
+
+#~ msgid "https://www.facebook.com/catchthemes/"
+#~ msgstr "https://www.facebook.com/catchthemes/"
+
+#~ msgid "Like Catch Themes on Facebook"
+#~ msgstr "Vind Catch Themes leuk op Facebook"
+
+#~ msgid "https://twitter.com/catchthemes/"
+#~ msgstr "https://twitter.com/catchthemes/"
+
+#~ msgid "Follow Catch Themes on Twitter"
+#~ msgstr "Volg Catch Themes op Twitter"
+
+#~ msgid "https://plus.google.com/+Catchthemes"
+#~ msgstr "https://plus.google.com/+Catchthemes"
+
+#~ msgid "Follow Catch Themes on Google+"
+#~ msgstr "Volg Catch Themes op Google+"
+
+#~ msgid "http://wordpress.org/support/view/theme-reviews/catch-flames/"
+#~ msgstr "http://wordpress.org/support/view/theme-reviews/catch-flames/"
+
+#~ msgid "Rate us 5 Star on WordPress"
+#~ msgstr "Waardeer ons met 5 sterren op Wordpress"
+
+#~ msgid "5 Star Rating"
+#~ msgstr "vijfsterrenwaardering"
+
+#~ msgid "Color Options"
+#~ msgstr "Kleurinstellingen"
+
+#~ msgid "Enable Fixed Header Top?"
+#~ msgstr "Vaste header top inschakelen?"
+
+#~ msgid "Disable Logo in Fixed Header Top?"
+#~ msgstr "Logo in vaste header top uitschakelen?"
+
+#~ msgid "Check to disable"
+#~ msgstr "Vink aan om uit te schakelen"
+
+#~ msgid "Logo in Fixed Header Top:"
+#~ msgstr "Logo in vaste header top:"
+
+#~ msgid "Insert as Header Logo"
+#~ msgstr "Insert as Header Logo"
+
+#~ msgid "Change Header Logo"
+#~ msgstr "Wijzig header logo"
+
+#~ msgid ""
+#~ "You need to create custom menu and then assign menu location as Featured "
+#~ "Header Top Menu. For more go to Menu Option Below"
+#~ msgstr ""
+#~ "Je moet een aangepast menu maken en dan de menulocatie instellen als "
+#~ "Uitgelichte Header Top-menu. Voor meer, ga naar de Menu-optie hieronder"
+
+#~ msgid "Save Changes"
+#~ msgstr "Wijzigingen opslaan"
+
+#~ msgid "Custom Header Image"
+#~ msgstr "Aangepaste header-afbeelding"
+
+#~ msgid ""
+#~ "Custom Header Image can be managed from Header Featured Image Options"
+#~ msgstr ""
+#~ "Aangepaste header-afbeelding kan worden ingesteld vanuit de instellingen "
+#~ "voor Header uitgelichte afbeelding"
+
+#~ msgid "Disable Header Logo?"
+#~ msgstr "Header logo uitschakelen?"
+
+#~ msgid "Logo url:"
+#~ msgstr "Logo URL:"
+
+#~ msgid "Insert as Logo"
+#~ msgstr "Insert as Logo"
+
+#~ msgid "Change Logo"
+#~ msgstr "Change Logo"
+
+#~ msgid "Preview:"
+#~ msgstr "Voorbeeld:"
+
+#~ msgid "Header Featured Image Options"
+#~ msgstr "Instellingen voor header uitgelichte afbeelding:"
+
+#~ msgid "Enable Featured Header Image"
+#~ msgstr "Schakel header uitgelichte afbeelding in"
+
+#~ msgid "Header Image:"
+#~ msgstr "Header-afbeelding:"
+
+#~ msgid "Click here to change header image"
+#~ msgstr "Klik hier om de header-afbeelding te wijzigen"
+
+#~ msgid "Click here to change Header Image"
+#~ msgstr "Klik hier om de header-afbeelding te wijzigen"
+
+#~ msgid "Click here to add Header Image"
+#~ msgstr "Klik hier om een header-afbeelding toe te voegen"
+
+#~ msgid "Preview"
+#~ msgstr "Voorbeeld"
+
+#~ msgid "There is no Header Image"
+#~ msgstr "Er is geen header-afbeelding"
+
+#~ msgid "Reset Header Featured Image Options?"
+#~ msgstr "Instellingen voor header uitgelichte afbeelding resetten?"
+
+#~ msgid "Check to reset"
+#~ msgstr "Vink aan om te resetten"
+
+#~ msgid "Menu Tutorial"
+#~ msgstr "Menu-tutorial"
+
+#~ msgid "https://catchthemes.com/blog/custom-menus-wordpress-themes/"
+#~ msgstr "https://catchthemes.com/blog/custom-menus-wordpress-themes/"
+
+#~ msgid "Click Here to Read Menu Tutorial"
+#~ msgstr "Klik hier om de menu-tutorial te lezen"
+
+#~ msgid "Custom Menus"
+#~ msgstr "Aangepaste menu's"
+
+#~ msgid "Click to Create Custom Menus"
+#~ msgstr "Klik hier om aangepaste menu's te maken"
+
+#~ msgid "Click Here to Create Menu"
+#~ msgstr "Klik hier om een menu te maken"
+
+#~ msgid "Assign Locations"
+#~ msgstr "Wijs locatie toe"
+
+#~ msgid ""
+#~ "Note: You can assign your custom menu to Fixed Header Top Menu, Header "
+#~ "Right Sidebar Menu, Primary Menu, Secondary Menu and Footer Menu "
+#~ "Locations. This will replace the WordPress default page menu"
+#~ msgstr ""
+#~ "Noot: je kunt hier je aangepaste menu toewijzen aan de vaste header top, "
+#~ "header rechter sidebar, primair menu, secundair menu en footer menu. Dit "
+#~ "zal het standaard Wordpress-menu vervangen."
+
+#~ msgid "Click to Manage Menu Locations"
+#~ msgstr "Klik om menulocaties te beheren"
+
+#~ msgid "Disable Default Page Menu?"
+#~ msgstr "Standaard paginamenu uitschakelen?"
+
+#~ msgid "Default Layout Options"
+#~ msgstr "Standaard layoutopties"
+
+#~ msgid "Reset Layout?"
+#~ msgstr "Layout resetten?"
+
+#~ msgid ""
+#~ "Only posts that belong to the categories selected here will be displayed "
+#~ "on the front page."
+#~ msgstr ""
+#~ "Alleen berichten in deze categorie(ën) zullen worden getoond op de "
+#~ "homepagina."
+
+#~ msgid "--Disabled--"
+#~ msgstr "--Uitgeschakeld--"
+
+#~ msgid "You may select multiple categories by holding down the CTRL key."
+#~ msgstr ""
+#~ "Je kunt meerdere categorieën selecteren door de CTRL-toets in te drukken."
+
+#~ msgid "Reset Excerpt?"
+#~ msgstr "Afbraak resetten?"
+
+#~ msgid "Enter your custom CSS styles."
+#~ msgstr "Voer je aangepaste CSS in."
+
+#~ msgid "CSS Tutorial from W3Schools."
+#~ msgstr "CSS tutorial van W3Schools."
+
+#~ msgid "http://www.w3schools.com/css/default.asp"
+#~ msgstr "http://www.w3schools.com/css/default.asp"
+
+#~ msgid "CSS Tutorial"
+#~ msgstr "CSS Tutorial"
+
+#~ msgid "Click Here to Read"
+#~ msgstr "Klik hier om te lezen"
+
+#~ msgid "Disable Scroll Up?"
+#~ msgstr "Scrollen naar boven uitschakelen?"
+
+#~ msgid "Color Scheme"
+#~ msgstr "Kleurschema"
+
+#~ msgid "Click Here To Edit"
+#~ msgstr "Klik hier om te wijzigen"
+
+#~ msgid "Demo Slider"
+#~ msgstr "Demoslider"
+
+#~ msgid "Featured Page Slider"
+#~ msgstr "Uitgelichte pagina slider"
+
+#~ msgid "Enable Sidebar"
+#~ msgstr "Sidebar inschakelen"
+
+#~ msgid "Homepage / Frontpage"
+#~ msgstr "Homepagina/voorpagina"
+
+#~ msgid "Transition Effect:"
+#~ msgstr "Overgangseffect:"
+
+#~ msgid "second(s)"
+#~ msgstr "seconde(n)"
+
+#~ msgid "Featured Page Slider Options"
+#~ msgstr "Instellingen voor uitgelichte pagina slider"
+
+#~ msgid "Social Icons"
+#~ msgstr "Sociale iconen"
+
+#~ msgid "Enable Social Icons in Sidebar?"
+#~ msgstr "Sociale iconen in de sidebar inschakelen?"
+
+#~ msgid "Just add Catch Flames Social Widget in Sidebar"
+#~ msgstr "Voeg Catch Flames Sociale Widget toe in de Sidebar"
+
+#~ msgid "Enable Social Icons in Footer?"
+#~ msgstr "Sociale iconen in de footer inschakelen?"
+
+#~ msgid "Enable SpecificFeeds?"
+#~ msgstr "SpecificFeeds inschakelen?"
+
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Een gedachte over &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s gedachten over &ldquo;%2$s&rdquo;"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "Favicon"
+#~ msgstr "Favicon"
+
+#~ msgid "Disable Favicon?"
+#~ msgstr "Favicon uitschakelen?"
+
+#~ msgid "Fav Icon URL:"
+#~ msgstr "URL voor Favicon:"
+
+#~ msgid "Insert as Favicon"
+#~ msgstr "Insert as Favicon"
+
+#~ msgid "Change Favicon"
+#~ msgstr "Change Favicon"
+
+#~ msgid "Web Clip Icon Options"
+#~ msgstr "Web Clip Icon-instellingen"
+
+#~ msgid "Disable Web Clip Icon?"
+#~ msgstr "Web Clip Icon uitschakelen?"
+
+#~ msgid "Web Clip Icon URL:"
+#~ msgstr "URL voor Web Clip Icon:"
+
+#~ msgid "Insert as Web Clip Icon"
+#~ msgstr "Insert as Web Clip Icon"
+
+#~ msgid "Change Web Clip Icon"
+#~ msgstr "Verander Web Clip Icon"
+
+#~ msgid ""
+#~ "Note: Web Clip Icon for Apple devices. Recommended Size - Width 144px and "
+#~ "Height 144px height, which will support High Resolution Devices like iPad "
+#~ "Retina."
+#~ msgstr ""
+#~ "Noot: Web Clip Icon voor Apple-apparaten. Voorgestelde resolutie: 144px "
+#~ "bij 144px, zodat ook apparaten met een hoge resolutie het ondersteunen."
+
+#, fuzzy
+#~ msgid "Disabled"
+#~ msgstr "Uitschakelen"
+
+#, fuzzy
+#~ msgid "2 columns"
+#~ msgstr "Drie kolommen"
+
+#, fuzzy
+#~ msgid "3 columns"
+#~ msgstr "Drie kolommen"
+
+#, fuzzy
+#~ msgid "4 columns"
+#~ msgstr "Drie kolommen"
+
+#, fuzzy
+#~ msgid "Promotion Headline Options"
+#~ msgstr "Header-opties"
+
+#, fuzzy
+#~ msgid "Enable Promotion Headline on"
+#~ msgstr "Vaste header top inschakelen?"
+
+#, fuzzy
+#~ msgid "Enable Featured Content on"
+#~ msgstr "Schakel header uitgelichte afbeelding in"
+
+#, fuzzy
+#~ msgid "Select Featured Content Layout"
+#~ msgstr "Contentarchief layout"
+
+#, fuzzy
+#~ msgid "Check to Move above Footer"
+#~ msgstr "Vink aan om in te schakelen"
+
+#, fuzzy
+#~ msgid "Catch Flames Pro"
+#~ msgstr "Catch Flames opties"
+
+#, fuzzy
+#~ msgid "Catch Flames"
+#~ msgstr "Catch Flames opties"
+
+#, fuzzy
+#~ msgid "https://catchthemes.com/themes/catch-flames"
+#~ msgstr "https://catchthemes.com/theme-instructions/catch-flames-pro/"
+
+#, fuzzy
+#~ msgid "https://catchthemes.com"
+#~ msgstr "https://catchthemes.com/"
+
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Dagelijkse archieven: %s"
+
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Maandelijkse archieven: %s"
+
+#~ msgctxt "monthly archives date format"
+#~ msgid "F Y"
+#~ msgstr "M J"
+
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Jaarlijkse archieven: %s"
+
+#~ msgctxt "yearly archives date format"
+#~ msgid "Y"
+#~ msgstr "J"
+
+#~ msgid "Blog Archives"
+#~ msgstr "Blog archieven"
+
+#~ msgid "More Theme Options &raquo;"
+#~ msgstr "More Theme Options &raquo;"
+
+#~ msgid "Page %s"
+#~ msgstr "Pagina %s"
+
+#~ msgid "Change Fav Icon"
+#~ msgstr "Wijzig Favicon"

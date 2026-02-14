@@ -22,7 +22,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          php_files=$(find site/wp-content/themes/catch-flames-child -type f -name '*.php' 2>/dev/null || true)
+          php_files=$(find \
+            site/wp-content/themes/catch-flames \
+            -type f -name '*.php' 2>/dev/null || true)
           if [ -z "$php_files" ]; then
             echo "No PHP files found to lint"
             exit 0

@@ -39,9 +39,11 @@ jobs:
             out_dir=/var/backups/northernsinc
             sudo mkdir -p "$out_dir"
             sudo mysqldump northernsinc_db | gzip > "/tmp/northernsinc_db_${ts}.sql.gz"
-            sudo tar -czf "/tmp/northernsinc_theme_${ts}.tar.gz" -C /var/www/html/northernsinc.org/wp-content/themes catch-flames-child
+            sudo tar -czf "/tmp/northernsinc_theme_${ts}.tar.gz" -C /var/www/html/northernsinc.org/wp-content/themes catch-flames
+            sudo tar -czf "/tmp/northernsinc_uploads_${ts}.tar.gz" -C /var/www/html/northernsinc.org/wp-content uploads
             sudo mv "/tmp/northernsinc_db_${ts}.sql.gz" "$out_dir/"
             sudo mv "/tmp/northernsinc_theme_${ts}.tar.gz" "$out_dir/"
+            sudo mv "/tmp/northernsinc_uploads_${ts}.tar.gz" "$out_dir/"
             sudo find "$out_dir" -type f -mtime +30 -delete
             sudo ls -lh "$out_dir"
           '

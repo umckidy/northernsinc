@@ -1,0 +1,1268 @@
+# Copyright (C) 2018-2025 Catch Themes
+# This file is distributed under the GNU General Public License, version 3 (GPLv3).
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Catch Flames\n"
+"Report-Msgid-Bugs-To: https://catchthemes.com/contact-us/\n"
+"POT-Creation-Date: 2025-12-10 21:03+0545\n"
+"PO-Revision-Date: 2016-12-07 14:47-0500\n"
+"Last-Translator: Catch Themes <info@catchthemes.com>\n"
+"Language-Team: Catch Themes <info@catchthemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x;esc_html_e;esc_html__;esc_attr_e;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: \n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:14
+msgid "Error 404 - Page Not Found."
+msgstr ""
+
+#: ../404.php:18
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr ""
+
+#: ../404.php:19
+msgid "This might be because:"
+msgstr ""
+
+#: ../404.php:20
+msgid ""
+"You have typed the web address incorrectly, or the page you were looking for may "
+"have been moved, updated or deleted."
+msgstr ""
+
+#: ../404.php:21
+msgid "Please try the following options instead:"
+msgstr ""
+
+#: ../404.php:22
+msgid ""
+"Check for a mis-typed URL error, then press the refresh button on your browser "
+"or Use the search box below."
+msgstr ""
+
+#: ../archive.php:42 ../author.php:69 ../category.php:45 ../index.php:31
+#: ../search.php:39 ../tag.php:45 ../template-blog.php:65
+msgid "Nothing Found"
+msgstr ""
+
+#: ../archive.php:46 ../author.php:73 ../category.php:49 ../index.php:35
+#: ../tag.php:49 ../template-blog.php:69
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: ../author.php:25
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: ../author.php:44 ../content-single.php:78
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../category.php:16
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../comments.php:17
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:36
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:56 ../comments.php:76
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:57 ../comments.php:77
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:58 ../comments.php:78
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:88
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-aside.php:18 ../content-featured.php:14 ../content-gallery.php:18
+#: ../content-gallery.php:50 ../content-image.php:18 ../content-link.php:18
+#: ../content-page.php:13 ../content-quote.php:16 ../content-status.php:17
+#: ../content.php:31 ../content.php:35 ../inc/catchflames-functions.php:905
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../content-aside.php:19
+msgid "Aside"
+msgstr ""
+
+#: ../content-aside.php:24 ../content-aside.php:50 ../content-gallery.php:95
+#: ../content-image.php:72 ../content-link.php:24 ../content-link.php:50
+#: ../content-quote.php:25 ../content-quote.php:78 ../content-single.php:23
+#: ../content-status.php:23 ../content-status.php:51 ../content.php:44
+#: ../content.php:110
+msgid "Leave a reply"
+msgstr ""
+
+#: ../content-aside.php:24 ../content-aside.php:50 ../content-gallery.php:95
+#: ../content-image.php:72 ../content-link.php:24 ../content-link.php:50
+#: ../content-quote.php:25 ../content-quote.php:78 ../content-single.php:23
+#: ../content-status.php:23 ../content-status.php:51 ../content.php:44
+#: ../content.php:110
+msgid "1 Comment &darr;"
+msgstr ""
+
+#: ../content-aside.php:24 ../content-aside.php:50 ../content-gallery.php:95
+#: ../content-image.php:72 ../content-link.php:24 ../content-link.php:50
+#: ../content-quote.php:25 ../content-quote.php:78 ../content-single.php:23
+#: ../content-status.php:23 ../content-status.php:51 ../content.php:44
+#: ../content.php:110
+msgid "% Comments &darr;"
+msgstr ""
+
+#: ../content-aside.php:35 ../content-gallery.php:34 ../content-link.php:35
+#: ../content-quote.php:38 ../content-status.php:36
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../content-aside.php:37 ../content-featured.php:24 ../content-gallery.php:57
+#: ../content-image.php:31 ../content-link.php:37 ../content-page.php:22
+#: ../content-quote.php:40 ../content-single.php:33 ../content-status.php:38
+#: ../content.php:69 ../image.php:90
+msgid "Pages:"
+msgstr ""
+
+#: ../content-aside.php:52 ../content-featured.php:51 ../content-gallery.php:98
+#: ../content-image.php:76 ../content-link.php:52 ../content-page.php:30
+#: ../content-quote.php:81 ../content-single.php:66 ../content-status.php:53
+#: ../content.php:113 ../image.php:100 ../inc/catchflames-functions.php:400
+msgid "Edit"
+msgstr ""
+
+#: ../content-featured.php:35 ../content-featured.php:44 ../content-gallery.php:70
+#: ../content-gallery.php:80 ../content-image.php:55 ../content-image.php:64
+#: ../content-quote.php:53 ../content-quote.php:63 ../content-single.php:44
+#: ../content-single.php:47 ../content.php:84 ../content.php:94
+msgid ", "
+msgstr ""
+
+#: ../content-featured.php:37
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-featured.php:39
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-gallery.php:19
+msgid "Gallery"
+msgstr ""
+
+#: ../content-gallery.php:49
+#, php-format
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../content-gallery.php:74 ../content-image.php:59 ../content-quote.php:57
+#: ../content.php:88
+#, php-format
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr ""
+
+#: ../content-gallery.php:86 ../content-image.php:67 ../content-quote.php:69
+#: ../content.php:100
+#, php-format
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr ""
+
+#: ../content-image.php:19
+msgid "Image"
+msgstr ""
+
+#: ../content-image.php:42
+#, php-format
+msgid ""
+"<a href=\"%1$s\" rel=\"bookmark\"><time class=\"entry-date\" "
+"datetime=\"%2$s\">%3$s</time></a><span class=\"by-author\"> <span class=\"sep\"> "
+"by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" "
+"title=\"%5$s\" rel=\"author\">%6$s</a></span></span>"
+msgstr ""
+
+#: ../content-image.php:47 ../inc/catchflames-functions.php:438
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../content-link.php:19
+msgid "Link"
+msgstr ""
+
+#: ../content-quote.php:17
+msgid "Quote"
+msgstr ""
+
+#: ../content-single.php:49
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s by <a href=\"%6$s\">%5$s</a>. "
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" "
+"rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:51
+#, php-format
+msgid ""
+"This entry was posted in %1$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a "
+"href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:53
+#, php-format
+msgid ""
+"This entry was posted by <a href=\"%6$s\">%5$s</a>. Bookmark the <a "
+"href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:82
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../content-status.php:18
+msgid "Status"
+msgstr ""
+
+#: ../content.php:32
+msgid "Featured"
+msgstr ""
+
+#: ../functions.php:167
+msgid "Fixed Header Top Menu"
+msgstr ""
+
+#: ../functions.php:168
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:221
+msgid "Small"
+msgstr ""
+
+#: ../functions.php:222
+msgid "S"
+msgstr ""
+
+#: ../functions.php:227
+msgid "Normal"
+msgstr ""
+
+#: ../functions.php:228
+msgid "M"
+msgstr ""
+
+#: ../functions.php:233
+msgid "Large"
+msgstr ""
+
+#: ../functions.php:234
+msgid "L"
+msgstr ""
+
+#: ../functions.php:239
+msgid "Huge"
+msgstr ""
+
+#: ../functions.php:240
+msgid "XL"
+msgstr ""
+
+#: ../functions.php:250
+msgid "White"
+msgstr ""
+
+#: ../functions.php:255
+msgid "Black"
+msgstr ""
+
+#: ../functions.php:260
+msgid "Gray"
+msgstr ""
+
+#: ../functions.php:265
+msgid "Yellow"
+msgstr ""
+
+#: ../functions.php:270
+msgid "Blue"
+msgstr ""
+
+#: ../image.php:18
+msgid "Image navigation"
+msgstr ""
+
+#: ../image.php:19
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../image.php:20
+msgid "Next &rarr;"
+msgstr ""
+
+#: ../image.php:30
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span "
+"class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> "
+"at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in "
+"<a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: ../inc/catchflames-featured-content.php:52
+#: ../inc/panel/customizer/customizer.php:172
+msgid "Featured Content"
+msgstr ""
+
+#: ../inc/catchflames-featured-content.php:53
+msgid ""
+"Here you can showcase the x number of Featured Content. You can edit this "
+"Headline, Subheadline and Feaured Content from \"Appearance -> Customize -> "
+"Featured Content Options\"."
+msgstr ""
+
+#: ../inc/catchflames-featured-content.php:239
+msgid "Permalink to: "
+msgstr ""
+
+#: ../inc/catchflames-functions.php:281 ../single.php:18 ../template-blog.php:45
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:289 ../template-blog.php:53
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:290 ../template-blog.php:54
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:368
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:368
+msgid "(Edit)"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:383
+msgid "Post author"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:389
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:395
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/catchflames-functions.php:404
+msgid "Reply"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:432
+#, php-format
+msgid ""
+"<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" "
+"rel=\"bookmark\"><time class=\"entry-date updated\" datetime=\"%3$s\" "
+"pubdate>%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </"
+"span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" "
+"title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:551
+msgid "ID"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:713 ../inc/panel/customizer/customizer.php:601
+msgid "Facebook"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:718 ../inc/panel/customizer/customizer.php:611
+msgid "Twitter"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:723 ../inc/panel/customizer/customizer.php:621
+msgid "Google+"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:728
+msgid "Linkedin"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:733 ../inc/panel/customizer/customizer.php:631
+msgid "Pinterest"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:738
+msgid "YouTube"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:743 ../inc/panel/customizer/customizer.php:651
+msgid "Vimeo"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:748 ../inc/panel/customizer/customizer.php:671
+msgid "AIM"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:753 ../inc/panel/customizer/customizer.php:681
+msgid "MySpace"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:758 ../inc/panel/customizer/customizer.php:691
+msgid "Flickr"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:763 ../inc/panel/customizer/customizer.php:701
+msgid "Tumblr"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:768 ../inc/panel/customizer/customizer.php:711
+msgid "deviantART"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:773 ../inc/panel/customizer/customizer.php:721
+msgid "Dribbble"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:778 ../inc/catchflames-functions.php:1198
+#: ../inc/panel/customizer/customizer.php:731
+msgid "WordPress"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:783 ../inc/panel/customizer/customizer.php:741
+msgid "RSS"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:788 ../inc/panel/customizer/customizer.php:751
+msgid "Slideshare"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:793 ../inc/panel/customizer/customizer.php:761
+msgid "Instagram"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:798 ../inc/panel/customizer/customizer.php:771
+msgid "Skype"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:803 ../inc/panel/customizer/customizer.php:781
+msgid "Soundcloud"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:808 ../inc/panel/customizer/customizer.php:791
+msgid "Email"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:813 ../inc/panel/customizer/customizer.php:801
+msgid "Contact"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:818 ../inc/panel/customizer/customizer.php:811
+msgid "Xing"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:823
+msgid "SpecificFeeds"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:828 ../inc/panel/customizer/customizer.php:830
+msgid "Meetup"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:833 ../inc/panel/customizer/customizer.php:840
+msgid "Goodreads"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:838 ../inc/panel/customizer/customizer.php:850
+msgid "github"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:843 ../inc/panel/customizer/customizer.php:860
+msgid "VK"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:848 ../inc/panel/customizer/customizer.php:870
+msgid "Spotify"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:853 ../inc/panel/customizer/customizer.php:880
+msgid "Threads"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:858 ../inc/panel/customizer/customizer.php:890
+msgid "Bluesky"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:863 ../inc/panel/customizer/customizer.php:900
+msgid "Tiktok"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:1177
+msgid "Y"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:1208
+msgid "Theme: Catch Flames Pro"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:1217 ../inc/catchflames-functions.php:1220
+msgid "Copyright"
+msgstr ""
+
+#: ../inc/catchflames-functions.php:1217 ../inc/catchflames-functions.php:1220
+msgid "All Rights Reserved."
+msgstr ""
+
+#: ../inc/catchflames-functions.php:1231
+msgid "Theme: Catch Flames by "
+msgstr ""
+
+#: ../inc/catchflames-functions.php:1241
+msgid "Catch Themes"
+msgstr ""
+
+#: ../inc/catchflames-menus.php:46 ../inc/catchflames-menus.php:162
+#: ../inc/catchflames-menus.php:168
+msgid "Menu"
+msgstr ""
+
+#: ../inc/catchflames-menus.php:55
+msgid "Connect"
+msgstr ""
+
+#: ../inc/catchflames-menus.php:62
+#: ../inc/panel/catchflames-themeoptions-defaults.php:17 ../searchform.php:17
+#: ../searchform.php:19
+msgid "Search"
+msgstr ""
+
+#: ../inc/catchflames-menus.php:111
+msgid "Primary menu"
+msgstr ""
+
+#: ../inc/catchflames-menus.php:113
+msgid "Skip to primary content"
+msgstr ""
+
+#: ../inc/catchflames-menus.php:114
+msgid "Skip to secondary content"
+msgstr ""
+
+#: ../inc/catchflames-metabox.php:14
+msgid "Catch Flames Options"
+msgstr ""
+
+#: ../inc/catchflames-metabox.php:31
+msgid "Sidabar Layout"
+msgstr ""
+
+#: ../inc/catchflames-metabox.php:33
+msgid "Default Layout Set in Customizer Options"
+msgstr ""
+
+#: ../inc/catchflames-metabox.php:34
+msgid "Three Columns (Style 1)"
+msgstr ""
+
+#: ../inc/catchflames-metabox.php:35
+msgid "Right sidebar"
+msgstr ""
+
+#: ../inc/catchflames-metabox.php:36
+msgid "Left sidebar"
+msgstr ""
+
+#: ../inc/catchflames-metabox.php:37
+msgid "No sidebar"
+msgstr ""
+
+#: ../inc/catchflames-slider.php:176
+msgid ""
+"You have selected Page Slider but you haven't added the Page ID in \"Appearance "
+"=> Theme Options => Featured Slider => Featured Page Slider Options\""
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:10
+msgid "Primary Sidebar"
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:12
+msgid ""
+"This is the primary sidebar if you are using a two or three column site layout "
+"option."
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:21
+msgid "Secondary Sidebar"
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:23
+msgid ""
+"This is the secondary sidebar if you are using a three column site layout option."
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:33
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:44
+msgid "Footer Area One"
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:46 ../inc/catchflames-widgets.php:57
+#: ../inc/catchflames-widgets.php:68
+msgid "An optional widget area for your site footer"
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:55
+msgid "Footer Area Two"
+msgstr ""
+
+#: ../inc/catchflames-widgets.php:66
+msgid "Footer Area Three"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:29
+msgid "Catch Flames is a Responsive WordPress Theme"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:30
+msgid ""
+"This is promotion headline. You can edit this from Appearance -> Customize -> "
+"Theme Options -> Promotion Headline Options"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:31
+msgid "Learn More"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:95
+msgid "Continue Reading"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:116
+msgid "Light"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:117
+msgid "Dark"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:130
+#: ../inc/panel/catchflames-themeoptions-defaults.php:179
+msgid "Homepage"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:131
+msgid "Excluding Homepage"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:132
+#: ../inc/panel/catchflames-themeoptions-defaults.php:180
+#: ../inc/panel/catchflames-themeoptions-defaults.php:223
+msgid "Entire Site"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:133
+msgid "Entire Site, Page/Post Featured Image"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:134
+msgid "Pages & Posts"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:135
+#: ../inc/panel/catchflames-themeoptions-defaults.php:181
+msgid "Disable"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:148
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:149
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:150
+msgid "No Sidebar"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:151
+msgid "Three Columns"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:165
+msgid "Full Content Display"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:166
+msgid "Excerpt/Blog Display"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:194
+#: ../inc/panel/catchflames-themeoptions-defaults.php:208
+msgid "Demo"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:195
+#: ../inc/panel/catchflames-themeoptions-defaults.php:209
+msgid "Page"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:222
+msgid "Homepage / Frontpage"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:224
+msgid "Disabled"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:237
+msgid "Show Excerpt"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:238
+msgid "Show Full Content"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:239
+msgid "Hide Content"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:253
+msgid "2 columns"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:254
+msgid "3 columns"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:255
+msgid "4 columns"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:268
+msgid "True"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:269
+msgid "Wait"
+msgstr ""
+
+#: ../inc/panel/catchflames-themeoptions-defaults.php:270
+msgid "False"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:34
+msgid "All Categories"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:48
+msgid ""
+"Hold down the Ctrl (windows) / Command (Mac) button to select multiple options."
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:61
+msgid "Theme Instructions"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:65
+msgid "Support"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:69
+msgid "Changelog"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:73
+msgid "Donate Now"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:77
+msgid "Review"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:33
+msgid "Theme Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:34
+msgid "Basic theme Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:38
+msgid "Fixed Header Top Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:39
+msgid ""
+"Fixed Header Top Menu : You need to create custom menu and then assign menu "
+"location as Featured Header Top Menu. For more go to Menu Option"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:43
+msgid "Header Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:48
+msgid "Search Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:53
+msgid "Promotion Headline Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:58
+msgid "Layout Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:63
+msgid "Homepage / Frontpage Category Setting"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:68
+msgid "Excerpt / More Tag Settings"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:73
+msgid "Feed Redirect"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:78
+msgid "Custom CSS"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:83
+msgid "Scroll Up"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:88
+msgid "Fitvid Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:95
+#: ../inc/panel/customizer/customizer.php:96
+msgid "Featured Slider"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:100
+msgid "Slider Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:108
+#: ../inc/panel/customizer/customizer.php:113
+msgid "Social Links"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:109
+msgid "Add your social links here"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:120
+#: ../inc/panel/customizer/customizer.php:125
+msgid "Tools"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:121
+#: ../inc/panel/customizer/customizer.php:126
+#, php-format
+msgid ""
+"Tools falls under Plugins Territory according to Theme Review Guidelines in "
+"WordPress.org. This feature will be depreciated in future versions from Catch "
+"Flames free version. If you want this feature, then you can add <a "
+"target=\"_blank\" href=\"%s\">Catch Web Tools</a>  plugin."
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:170
+msgid "Featured Content Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:180
+msgid "Extra Menu Options specific to this theme"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:182
+msgid "Menu Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:190
+msgid "Check to Disable Default Page Menu"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:202
+msgid "Enable Promotion Headline on"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:214
+msgid "Promotion Headline Text"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:215
+msgid "Appropriate Words: 10"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:225
+msgid "Promotion Subheadline Text"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:226
+msgid "Appropriate Words: 15"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:236
+msgid "Appropriate Words: 3"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:237
+msgid "Promotion Headline Button Text"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:247
+msgid "Promotion Headline Link"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:258
+msgid "Check to Open Link in New Window/Tab"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:269
+msgid "Promotion Headline Left Section Width"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:270
+msgid ""
+"This is promotion headline left section width. Once this is adjusted, the width "
+"for promotion headline right section is set automatically. in %"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:287
+msgid "Check to Enable Fixed Header Top"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:297
+msgid "Check to Disable Logo in Fixed Header Top"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:307
+msgid "Logo in Fixed Header Top"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:319
+msgid "Enable Featured Header Image on"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:329
+msgid "Featured Header Image Alt/Title Tag"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:338
+msgid "Featured Header Image Link URL"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:347
+msgid "Check to Reset Header Featured Image Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:348
+#: ../inc/panel/customizer/customizer.php:394
+#: ../inc/panel/customizer/customizer.php:445
+msgid "Please refresh the customizer after saving if reset option is used"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:359
+msgid "Default Display Text in Search"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:371
+msgid "Sidebar Layout Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:382
+msgid "Archive Content Layout"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:393
+msgid "Check to Reset Layout"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:406
+msgid "Front page posts categories:"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:407
+msgid ""
+"Only posts that belong to the categories selected here will be displayed on the "
+"front page"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:418
+msgid "More Tag Text"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:428
+msgid "Excerpt length(words)"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:444
+msgid "Check to Reset Excerpt"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:457
+msgid "Enter your custom CSS styles"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:469
+msgid "Check to Disable Scroll Up"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:480
+msgid "Check to enable Fitvid"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:492
+msgid "Default Color Scheme"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:504
+msgid "Enable Slider"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:515
+msgid "Transition Delay"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:532
+msgid "Transition Length"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:549
+msgid "Image Loader"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:550
+msgid "More Info"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:561
+msgid "Number of Slides"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:562
+msgid ""
+"Customizer page needs to be refreshed after saving if number of slides is changed"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:578
+msgid "Select Slider Type"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:592
+msgid "Check to Enable Social Icons in Footer"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:641
+msgid "Youtube"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:661
+msgid "LinkedIn"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:821
+msgid "Check to Enable SpecificFeeds"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:914
+msgid "Enable Featured Content on"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:925
+msgid "Select Featured Content Layout"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:936
+msgid "Check to Move above Footer"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:946
+msgid "Headline"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:947
+msgid "Leave field empty if you want to remove Headline"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:956
+msgid "Sub-headline"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:957
+msgid "Leave field empty if you want to remove Sub-headline"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:966
+msgid "Select Content Type"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:977
+msgid "No of Featured Content"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:978
+msgid ""
+"Save and refresh the page if No. of Featured Content is changed (Max no of "
+"Featured Content is 20)"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:993
+msgid "Display Content"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1011
+msgid "Check to Disable Header Logo"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1021
+msgid "Logo"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1195
+#, php-format
+msgid "Featured Page Slider #%s"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1222
+#, php-format
+msgid "Featured Page Content #%s"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1234
+msgid ""
+"Caution: Reset all settings to default. Refresh the page after save to view full "
+"effects."
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1236
+msgid "Reset all settings"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1247
+msgid "Check to reset all settings to default"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1257
+#: ../inc/panel/customizer/customizer.php:1268
+msgid "Important Links"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1305
+msgid "Refresh the customizer page after saving to view reset effects"
+msgstr ""
+
+#: ../inc/panel/customizer/upgrade-button/class-customize.php:76
+msgid "Catch Flames Pro"
+msgstr ""
+
+#: ../inc/panel/customizer/upgrade-button/class-customize.php:77
+msgid "Upgrade Now"
+msgstr ""
+
+#: ../search.php:15
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../search.php:43
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../sidebar-third.php:57
+msgid "Secondary Sidebar Widget Area"
+msgstr ""
+
+#: ../sidebar-third.php:59
+msgid ""
+"This is the Secondary Sidebar Widget Area if you are using a three column site "
+"layout option."
+msgstr ""
+
+#: ../sidebar-third.php:60 ../sidebar.php:85
+#, php-format
+msgid ""
+"You can add content to this area by visiting your <a href=\"%s\">Widgets Panel</"
+"a> and adding new widgets to this area."
+msgstr ""
+
+#: ../sidebar.php:82
+msgid "Primary Sidebar Widget Area"
+msgstr ""
+
+#: ../sidebar.php:84
+msgid ""
+"This is the Primary Sidebar Widget Area if you are using a two or three column "
+"site layout option."
+msgstr ""
+
+#: ../single.php:19
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../single.php:20
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../tag.php:16
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
