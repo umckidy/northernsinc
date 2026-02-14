@@ -377,6 +377,22 @@ body.nsi-modern .wp-block-button__link {
   text-transform: uppercase;
   font-size: 12px;
   padding: 14px 18px;
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    filter 140ms ease;
+}
+
+body.nsi-modern .wp-block-button__link:hover,
+body.nsi-modern .wp-block-button__link:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(11, 102, 112, 0.30);
+  filter: brightness(1.04);
+}
+
+body.nsi-modern .wp-block-button__link:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 26px rgba(11, 102, 112, 0.22);
 }
 
 /* Home: give breathing room between CTA and next section heading */
@@ -401,6 +417,10 @@ body.nsi-modern a.maxbutton:visited {
   text-decoration: none !important;
   display: inline-flex !important;
   align-items: center !important;
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    filter 140ms ease;
 }
 
 @media (max-width: 600px) {
@@ -427,7 +447,14 @@ body.nsi-modern a.maxbutton .mb-text {
 
 body.nsi-modern a.maxbutton:hover,
 body.nsi-modern a.maxbutton:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(11, 102, 112, 0.30) !important;
   filter: brightness(1.04);
+}
+
+body.nsi-modern a.maxbutton:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 26px rgba(11, 102, 112, 0.22) !important;
 }
 
 /* Plain PDF links: present as CTAs on subpages */
@@ -444,11 +471,22 @@ body.nsi-modern .entry-content a[href$=".pdf"] {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 12px;
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    filter 140ms ease;
 }
 
 body.nsi-modern .entry-content a[href$=".pdf"]:hover,
 body.nsi-modern .entry-content a[href$=".pdf"]:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(11, 102, 112, 0.30);
   filter: brightness(1.04);
+}
+
+body.nsi-modern .entry-content a[href$=".pdf"]:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 26px rgba(11, 102, 112, 0.22);
 }
 
 /* Buttons (theme + plugins): match the home CTA */
