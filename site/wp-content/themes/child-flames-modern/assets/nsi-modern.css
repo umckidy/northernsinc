@@ -379,6 +379,15 @@ body.nsi-modern .wp-block-button__link {
   padding: 14px 18px;
 }
 
+/* Home: give breathing room between CTA and next section heading */
+body.nsi-modern.home .wp-block-buttons {
+  margin-bottom: 18px;
+}
+
+body.nsi-modern.home h2.wp-block-heading {
+  margin-top: 18px;
+}
+
 /* MaxButtons plugin: normalize to match the home CTA */
 body.nsi-modern a.maxbutton,
 body.nsi-modern a.maxbutton:visited {
