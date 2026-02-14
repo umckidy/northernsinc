@@ -75,13 +75,13 @@ function catchflames_featured_header() {
 
 
 function nsi_modern_brand_mark() {
-	// Simple fishing lure mark (inline SVG) for header branding.
+	// Simple fishing lure silhouette mark (inline SVG) for header branding.
 	return '<span class="nsi-mark" aria-hidden="true">'
-		. '<svg viewBox="0 0 48 48" width="36" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">'
-		. '<path d="M24 6c3 0 6 2 6 6 0 5-3 8-6 11-3-3-6-6-6-11 0-4 3-6 6-6Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>'
-		. '<path d="M24 23v9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'
-		. '<path d="M24 32c-6 0-10 4-10 8 4-2 7-2 10 1 3-3 6-3 10-1 0-4-4-8-10-8Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>'
-		. '<path d="M30 9h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'
+		. '<svg viewBox="0 0 64 64" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">'
+		. '<path fill="currentColor" d="M45.6 15.1c-8.3-3.2-17.2-2.9-26.4.8-1 .4-1.5 1.6-1.1 2.6.4 1 1.6 1.5 2.6 1.1 8.2-3.2 16-3.5 23.2-.9.9.3 1.8.8 2.6 1.4l-4 2.7c-.9.6-1.1 1.8-.5 2.7.4.6 1 .9 1.6.9.4 0 .8-.1 1.1-.3l6.6-4.5c.5-.4.9-1 .9-1.7 0-.7-.3-1.3-.9-1.7-1.7-1.2-3.6-2.2-5.7-3.1Z"/>'
+		. '<path fill="currentColor" d="M19.2 24.8c-.8-.7-2.1-.6-2.8.2-2.9 3.2-4.4 6.6-4.4 10.3 0 3.6 1.4 6.9 4.1 9.9.7.8 2 .9 2.8.2.8-.7.9-2 .2-2.8-2.1-2.3-3.1-4.7-3.1-7.3 0-2.6 1.1-5.2 3.4-7.7.7-.8.6-2.1-.2-2.8Z"/>'
+		. '<path fill="currentColor" d="M54 33.2c-1.1-2.4-2.7-4.6-4.7-6.5-5.3-5-12.2-7.4-20.6-7.4-1.1 0-2 .9-2 2s.9 2 2 2c7.4 0 13.3 2.1 17.9 6.4 2.2 2.1 3.8 4.6 4.7 7.5-1.8 5.9-6.4 9.7-14.2 11.3-1.1.2-1.8 1.3-1.5 2.4.2.9 1 1.6 2 1.6h.4c9.4-1.9 15.3-6.8 17.7-14.7.2-.5.2-1.1 0-1.6Z"/>'
+		. '<path fill="currentColor" d="M26.8 50.6c-.8 0-1.5-.4-1.8-1.2-1.3-3.2-4.2-4.8-8.8-4.8-1.1 0-2-.9-2-2s.9-2 2-2c5.7 0 9.8 2.4 12.4 7.1.4 1 0 2.2-1 2.7-.3.1-.6.2-.8.2Z"/>'
 		. '</svg>'
 		. '</span>';
 }
