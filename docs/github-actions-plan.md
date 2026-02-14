@@ -2,7 +2,7 @@
 
 ## What to commit
 
-- `site/wp-content/themes/**` (tracked themes: `catch-flames` and `northernsinc-modern`)
+- `site/wp-content/themes/**` (tracked themes: `catch-flames` and `child-flames-modern`)
 - `.github/workflows/**` (CI/deploy/backup automation)
 - `docs/**` and `scripts/**` (runbooks and deployment helpers)
 
@@ -20,7 +20,7 @@ Use GitHub Actions to deploy the tracked WordPress themes to the VM over SSH + r
 2. `deploy-prod.yml` runs in GitHub Actions
 3. Workflow connects to VM and syncs:
    - `site/wp-content/themes/catch-flames/`
-   - `site/wp-content/themes/northernsinc-modern/`
+   - `site/wp-content/themes/child-flames-modern/`
 4. Workflow fixes ownership/permissions and verifies HTTPS response
 
 ## NGINX config management

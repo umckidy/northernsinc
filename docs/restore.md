@@ -4,7 +4,7 @@ This repo manages:
 
 - WordPress themes:
   - `/var/www/html/northernsinc.org/wp-content/themes/catch-flames/` (baseline)
-  - `/var/www/html/northernsinc.org/wp-content/themes/northernsinc-modern/` (modern child)
+  - `/var/www/html/northernsinc.org/wp-content/themes/child-flames-modern/` (modern child)
 - NGINX prod site config: `/etc/nginx/sites-available/northernsinc.org.prod`
 - Nightly backups written on VM: `/var/backups/northernsinc/`
 
@@ -37,6 +37,8 @@ Use this if a theme edit broke the layout or caused PHP errors.
 If you want to compare looks, you can switch between themes in WordPress Admin:
 
 - Appearance -> Themes -> activate either `Catch Flames` (baseline) or `Northerns Inc Modern` (child)
+
+If the theme name shown in WP Admin differs, the directory slug used by WordPress for the child theme is `child-flames-modern`.
 
 Recommended (safe) rollback path:
 
