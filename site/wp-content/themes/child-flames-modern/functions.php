@@ -75,12 +75,13 @@ function catchflames_featured_header() {
 
 
 function nsi_modern_brand_mark() {
-	// Simple northern fish mark (inline SVG) for header branding.
+	// Simple fishing lure mark (inline SVG) for header branding.
 	return '<span class="nsi-mark" aria-hidden="true">'
-		. '<svg viewBox="0 0 96 32" width="36" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">'
-		. '<path d="M4 16c10-10 25-12 38-6 4-3 9-5 15-5 15 0 29 8 35 11-6 3-20 11-35 11-6 0-11-2-15-5-13 6-28 4-38-6Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>'
-		. '<path d="M77 16c3-4 7-6 12-7-1 4-1 10 0 14-5-1-9-3-12-7Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>'
-		. '<circle cx="55" cy="14" r="1.7" fill="currentColor"/>'
+		. '<svg viewBox="0 0 48 48" width="36" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">'
+		. '<path d="M24 6c3 0 6 2 6 6 0 5-3 8-6 11-3-3-6-6-6-11 0-4 3-6 6-6Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>'
+		. '<path d="M24 23v9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'
+		. '<path d="M24 32c-6 0-10 4-10 8 4-2 7-2 10 1 3-3 6-3 10-1 0-4-4-8-10-8Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>'
+		. '<path d="M30 9h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'
 		. '</svg>'
 		. '</span>';
 }

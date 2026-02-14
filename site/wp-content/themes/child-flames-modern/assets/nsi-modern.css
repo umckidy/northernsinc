@@ -219,7 +219,7 @@ body.nsi-modern #header-menu ul.menu ul {
   border: 1px solid rgba(16, 33, 28, 0.16);
   border-radius: 14px;
   padding: 8px;
-  margin-top: 10px;
+  margin-top: 0;
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
 }
 
@@ -235,7 +235,7 @@ body.nsi-modern #header-menu ul.menu {
 }
 
 body.nsi-modern #header-menu ul.menu ul {
-  top: calc(100% + 8px) !important;
+  top: 100% !important;
   left: 0 !important;
   opacity: 0;
   visibility: hidden;
@@ -349,6 +349,59 @@ body.nsi-modern .wp-block-button__link {
   text-transform: uppercase;
   font-size: 12px;
   padding: 14px 18px;
+}
+
+/* MaxButtons plugin: normalize to match the home CTA */
+body.nsi-modern a.maxbutton,
+body.nsi-modern a.maxbutton:visited {
+  background: linear-gradient(135deg, var(--nsi-water), var(--nsi-pine)) !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 12px 30px rgba(11, 102, 112, 0.28) !important;
+  height: auto !important;
+  width: auto !important;
+  padding: 12px 16px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+body.nsi-modern a.maxbutton .mb-text {
+  color: #fff !important;
+  font-family: Manrope, system-ui, -apple-system, "Segoe UI", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.10em !important;
+  text-transform: uppercase !important;
+  line-height: 1.1 !important;
+  padding: 0 !important;
+  text-shadow: none !important;
+}
+
+body.nsi-modern a.maxbutton:hover,
+body.nsi-modern a.maxbutton:focus {
+  filter: brightness(1.04);
+}
+
+/* Plain PDF links: present as CTAs on subpages */
+body.nsi-modern .entry-content a[href$=".pdf"] {
+  background: linear-gradient(135deg, var(--nsi-water), var(--nsi-pine));
+  color: #fff;
+  border-radius: 999px;
+  padding: 12px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+body.nsi-modern .entry-content a[href$=".pdf"]:hover,
+body.nsi-modern .entry-content a[href$=".pdf"]:focus {
+  filter: brightness(1.04);
 }
 
 /* Buttons (theme + plugins): match the home CTA */
