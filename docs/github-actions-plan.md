@@ -53,3 +53,7 @@ Add these in repository or `production` environment secrets:
 3. Run deploy workflow with `workflow_dispatch`
 4. Confirm child theme files updated on VM
 5. Confirm site health with `curl -I https://northernsinc.org`
+
+## Restore runbook
+
+For quick recovery after a bad change, see `docs/restore.md`.
