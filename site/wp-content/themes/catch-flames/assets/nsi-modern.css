@@ -76,43 +76,6 @@ body.nsi-modern #header-content {
   padding: 22px 0 10px;
 }
 
-/* Header search (top-right widget) */
-body.nsi-modern #sidebar-header-right {
-  float: none;
-}
-
-body.nsi-modern #sidebar-header-right .widget {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-}
-
-body.nsi-modern #sidebar-header-right #searchform {
-  margin: 0;
-}
-
-body.nsi-modern #sidebar-header-right #searchform input#s {
-  width: 220px;
-  max-width: 55vw;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: rgba(255, 255, 255, 0.92);
-  border-radius: 999px;
-  padding: 10px 14px;
-}
-
-body.nsi-modern #sidebar-header-right #searchform input#s::placeholder {
-  color: rgba(255, 255, 255, 0.65);
-}
-
-@media (max-width: 900px) {
-  body.nsi-modern #sidebar-header-right #searchform input#s {
-    width: 160px;
-  }
-}
-
 body.nsi-modern #logo-wrap {
   display: flex;
   align-items: center;
@@ -295,11 +258,6 @@ body.nsi-modern #site-generator {
 
 body.nsi-modern #site-generator {
   color: rgba(251, 250, 246, 0.80);
-}
-
-/* Hide upstream theme credit for a cleaner footer. */
-body.nsi-modern #site-generator .powered {
-  display: none;
 }
 
 body.nsi-modern #site-generator a {
