@@ -308,6 +308,23 @@ body.nsi-modern #featured-content {
   }
 }
 
+/* Mobile: hide sidebar widgets (menu/newsletter) to match desktop intent. */
+@media (max-width: 899px) {
+  body.nsi-modern #secondary {
+    display: none;
+  }
+
+  body.nsi-modern .content-sidebar-wrap {
+    float: none;
+    width: 100%;
+  }
+
+  body.nsi-modern #primary {
+    float: none;
+    width: 100%;
+  }
+}
+
 body.nsi-modern .hentry,
 body.nsi-modern .widget,
 body.nsi-modern .no-results,
