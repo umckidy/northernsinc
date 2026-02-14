@@ -61,3 +61,14 @@ function nsi_modern_disable_featured_header_image() {
 	remove_action( 'catchflames_after_header', 'catchflames_featured_overall_image', 10 );
 }
 add_action( 'after_setup_theme', 'nsi_modern_disable_featured_header_image', 20 );
+
+
+/**
+ * Override the parent theme's featured header wiring.
+ *
+ * Catch Flames defines this as pluggable. Providing a no-op implementation
+ * prevents the parent from registering the featured header image output.
+ */
+function catchflames_featured_header() {
+	// Intentionally blank.
+}
