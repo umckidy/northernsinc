@@ -1,9 +1,10 @@
-name: Backup Nightly
+name: Backup Weekly
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 6 * * *'
+    # Weekly at 06:17 UTC (Sunday)
+    - cron: '17 6 * * 0'
 
 jobs:
   backup:
@@ -44,6 +45,8 @@ jobs:
             sudo mv "/tmp/northernsinc_db_${ts}.sql.gz" "$out_dir/"
             sudo mv "/tmp/northernsinc_theme_${ts}.tar.gz" "$out_dir/"
             sudo mv "/tmp/northernsinc_uploads_${ts}.tar.gz" "$out_dir/"
-            sudo find "$out_dir" -type f -mtime +30 -delete
+            # Keep a small rolling window so disk doesn't fill up.
+            # Delete backups older than 21 days (3 weekly snapshots).
+            sudo find "$out_dir" -type f -mtime +21 -delete
             sudo ls -lh "$out_dir"
           '

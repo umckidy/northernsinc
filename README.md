@@ -4,7 +4,7 @@ This repo is the source of truth for:
 
 - The active WordPress theme code deployed to the VM
 - The production NGINX site config deployed to the VM
-- GitHub Actions workflows that lint, deploy, and create nightly backups
+- GitHub Actions workflows that lint, deploy, and create weekly backups
 
 It intentionally does not track WordPress core, database contents, or media uploads.
 
@@ -31,7 +31,7 @@ flowchart TD
   DeployNginx -->|SSH + install| VMNginx[/VM: /etc/nginx/sites-available/northernsinc.org.prod/]
   DeployNginx -->|nginx -t + reload| Nginx[nginx]
 
-  GitHub --> Backup[Backup Nightly\n.github/workflows/backup-nightly.yml]
+  GitHub --> Backup[Backup Weekly\n.github/workflows/backup-nightly.yml]
   Backup -->|SSH runs mysqldump + tar| Backups[/VM: /var/backups/northernsinc/]
 ```
 

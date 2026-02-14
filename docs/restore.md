@@ -6,7 +6,7 @@ This repo manages:
   - `/var/www/html/northernsinc.org/wp-content/themes/catch-flames/` (baseline)
   - `/var/www/html/northernsinc.org/wp-content/themes/child-flames-modern/` (modern child)
 - NGINX prod site config: `/etc/nginx/sites-available/northernsinc.org.prod`
-- Nightly backups written on VM: `/var/backups/northernsinc/`
+- Weekly backups written on VM: `/var/backups/northernsinc/`
 
 This runbook is optimized for quick recovery after a bad change.
 
