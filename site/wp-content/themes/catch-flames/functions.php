@@ -77,6 +77,39 @@ add_action( 'template_redirect', 'catchflames_template_redirect' );
 add_action( 'after_setup_theme', 'catchflames_setup' );
 
 
+/**
+ * Northerns Inc modern styling layer.
+ *
+ * This is intentionally implemented as an additive stylesheet so it can be
+ * rolled back easily via git without chasing edits across the theme CSS.
+ */
+function nsi_enqueue_modern_assets() {
+	$theme_version = wp_get_theme()->get( 'Version' );
+
+	wp_enqueue_style(
+		'nsi-google-fonts',
+		'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Manrope:wght@400..800&display=swap',
+		array(),
+		null
+	);
+
+	wp_enqueue_style(
+		'nsi-modern',
+		get_theme_file_uri( 'assets/nsi-modern.css' ),
+		array( 'catchflames-style' ),
+		$theme_version
+	);
+}
+add_action( 'wp_enqueue_scripts', 'nsi_enqueue_modern_assets', 20 );
+
+
+function nsi_body_class( $classes ) {
+	$classes[] = 'nsi-modern';
+	return $classes;
+}
+add_filter( 'body_class', 'nsi_body_class' );
+
+
 if ( ! function_exists( 'catchflames_setup' ) ):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
