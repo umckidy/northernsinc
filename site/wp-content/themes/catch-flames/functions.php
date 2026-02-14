@@ -85,6 +85,11 @@ add_action( 'after_setup_theme', 'catchflames_setup' );
  */
 function nsi_enqueue_modern_assets() {
 	$theme_version = wp_get_theme()->get( 'Version' );
+	$modern_css_path = get_theme_file_path( 'assets/nsi-modern.css' );
+	$modern_css_version = $theme_version;
+	if ( is_string( $modern_css_path ) && file_exists( $modern_css_path ) ) {
+		$modern_css_version = (string) filemtime( $modern_css_path );
+	}
 
 	wp_enqueue_style(
 		'nsi-google-fonts',
@@ -97,7 +102,7 @@ function nsi_enqueue_modern_assets() {
 		'nsi-modern',
 		get_theme_file_uri( 'assets/nsi-modern.css' ),
 		array( 'catchflames-style' ),
-		$theme_version
+		$modern_css_version
 	);
 }
 add_action( 'wp_enqueue_scripts', 'nsi_enqueue_modern_assets', 20 );
