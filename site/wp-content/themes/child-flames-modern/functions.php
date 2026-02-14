@@ -72,3 +72,25 @@ add_action( 'after_setup_theme', 'nsi_modern_disable_featured_header_image', 20 
 function catchflames_featured_header() {
 	// Intentionally blank.
 }
+
+
+function nsi_modern_brand_mark() {
+	// Simple northern fish mark (inline SVG) for header branding.
+	return '<span class="nsi-mark" aria-hidden="true">'
+		. '<svg viewBox="0 0 96 32" width="36" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">'
+		. '<path d="M4 16c10-10 25-12 38-6 4-3 9-5 15-5 15 0 29 8 35 11-6 3-20 11-35 11-6 0-11-2-15-5-13 6-28 4-38-6Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>'
+		. '<path d="M77 16c3-4 7-6 12-7-1 4-1 10 0 14-5-1-9-3-12-7Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>'
+		. '<circle cx="55" cy="14" r="1.7" fill="currentColor"/>'
+		. '</svg>'
+		. '</span>';
+}
+
+
+function catchflames_headerdetails() {
+	echo '<div id="logo-wrap" class="clearfix">';
+	echo '<div class="nsi-brand">';
+	echo nsi_modern_brand_mark();
+	echo catchflames_site_details();
+	echo '</div>';
+	echo '</div><!-- #logo-wrap -->';
+}
