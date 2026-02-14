@@ -282,6 +282,11 @@ body.nsi-modern #main {
   padding-top: 28px;
 }
 
+/* Home: Catch Flames can output an empty featured-content band; hide it. */
+body.nsi-modern #featured-content {
+  display: none;
+}
+
 /* Subpages: center content and avoid awkward sidebar layout. */
 @media (min-width: 900px) {
   body.nsi-modern #secondary {
@@ -508,6 +513,11 @@ body.nsi-modern #footer-sidebar,
 body.nsi-modern #site-generator {
   background: rgba(11, 31, 27, 0.86);
   border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+/* Remove empty footer widget band for a tighter page end. */
+body.nsi-modern #footer-sidebar {
+  display: none;
 }
 
 body.nsi-modern #site-generator {
