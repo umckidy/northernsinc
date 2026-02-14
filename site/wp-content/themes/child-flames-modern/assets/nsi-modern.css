@@ -394,6 +394,16 @@ body.nsi-modern a.maxbutton:visited {
   align-items: center !important;
 }
 
+@media (max-width: 600px) {
+  /* Stack CTA buttons cleanly on small screens (e.g., About page). */
+  body.nsi-modern .entry-content a.maxbutton,
+  body.nsi-modern .entry-content a.maxbutton:visited {
+    width: min(92%, 360px) !important;
+    margin: 12px auto !important;
+    justify-content: center !important;
+  }
+}
+
 body.nsi-modern a.maxbutton .mb-text {
   color: #fff !important;
   font-family: Manrope, system-ui, -apple-system, "Segoe UI", sans-serif !important;
