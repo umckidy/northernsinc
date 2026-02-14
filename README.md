@@ -31,7 +31,7 @@ flowchart TD
   DeployNginx -->|SSH + install| VMNginx[/VM: /etc/nginx/sites-available/northernsinc.org.prod/]
   DeployNginx -->|nginx -t + reload| Nginx[nginx]
 
-  GitHub --> Backup[Backup Weekly\n.github/workflows/backup-nightly.yml]
+  GitHub --> Backup[Backup Weekly\n.github/workflows/backup-weekly.yml]
   Backup -->|SSH runs mysqldump + tar| Backups[/VM: /var/backups/northernsinc/]
 ```
 
