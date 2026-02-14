@@ -153,6 +153,8 @@ body.nsi-modern .nsi-mark {
 body.nsi-modern .nsi-mark svg {
   width: 26px;
   height: 26px;
+  display: block;
+  transform: translateX(-1px);
 }
 
 body.nsi-modern #site-details {
