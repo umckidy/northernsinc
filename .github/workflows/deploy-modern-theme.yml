@@ -7,7 +7,7 @@ on:
       - main
     paths:
       - 'site/wp-content/themes/child-flames-modern/**'
-      - '.github/workflows/deploy-prod.yml'
+      - '.github/workflows/deploy-modern-theme.yml'
 
 jobs:
   deploy:

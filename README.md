@@ -24,7 +24,7 @@ flowchart TD
 
   GitHub --> CI[CI: PHP lint\n.github/workflows/ci.yml]
 
-  GitHub --> DeployTheme[Deploy Production Modern Theme\n.github/workflows/deploy-prod.yml]
+  GitHub --> DeployTheme[Deploy Production Modern Theme\n.github/workflows/deploy-modern-theme.yml]
   DeployTheme -->|SSH + rsync| VMTheme[/VM: /var/www/html/northernsinc.org/wp-content/themes/child-flames-modern/]
   DeployTheme -->|health check| Site[https://northernsinc.org]
 

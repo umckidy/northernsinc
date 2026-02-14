@@ -17,7 +17,7 @@
 Use GitHub Actions to deploy the modern WordPress child theme to the VM over SSH + rsync.
 
 1. Developer pushes to `main`
-2. `deploy-prod.yml` runs in GitHub Actions
+2. `deploy-modern-theme.yml` runs in GitHub Actions
 3. Workflow connects to VM and syncs `site/wp-content/themes/child-flames-modern/`
 4. Workflow fixes ownership/permissions and verifies HTTPS response
 
