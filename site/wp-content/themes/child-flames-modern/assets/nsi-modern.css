@@ -83,6 +83,11 @@ body.nsi-modern #header-content {
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* Remove the large header image for a cleaner modern layout. */
+body.nsi-modern #header-image {
+  display: none;
+}
+
 /* Header search (top-right widget) */
 body.nsi-modern #sidebar-header-right {
   float: none;

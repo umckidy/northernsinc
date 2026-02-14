@@ -48,3 +48,16 @@ function nsi_modern_body_class( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'nsi_modern_body_class' );
+
+
+/**
+ * Disable the large featured header image in the modern theme.
+ *
+ * Catch Flames wires the header image via a hook that adds another hook.
+ * Removing the initial hook keeps the header image markup out of the DOM.
+ */
+function nsi_modern_disable_featured_header_image() {
+	remove_action( 'catchflames_before', 'catchflames_featured_header', 10 );
+	remove_action( 'catchflames_after_header', 'catchflames_featured_overall_image', 10 );
+}
+add_action( 'after_setup_theme', 'nsi_modern_disable_featured_header_image', 20 );
