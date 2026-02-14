@@ -21,6 +21,11 @@ Use GitHub Actions to deploy the modern WordPress child theme to the VM over SSH
 3. Workflow connects to VM and syncs `site/wp-content/themes/child-flames-modern/`
 4. Workflow fixes ownership/permissions and verifies HTTPS response
 
+Notes:
+
+- The active theme is `child-flames-modern` (child of `catch-flames`).
+- The parent theme `catch-flames` must remain installed on the VM, but it is not deployed by GitHub Actions.
+
 ## NGINX config management
 
 The production NGINX site config is tracked under `infra/nginx/sites-available/northernsinc.org.prod` and deployed via `Deploy NGINX Config`.

@@ -10,7 +10,8 @@ It intentionally does not track WordPress core, database contents, or media uplo
 
 ## What is tracked
 
-- Active theme: `site/wp-content/themes/catch-flames/`
+- Modern (active) theme: `site/wp-content/themes/child-flames-modern/`
+- Parent theme (installed on VM, not deployed): `catch-flames`
 - NGINX prod config: `infra/nginx/sites-available/northernsinc.org.prod`
 - Workflows: `.github/workflows/`
 - Runbooks/docs: `docs/`
@@ -23,8 +24,8 @@ flowchart TD
 
   GitHub --> CI[CI: PHP lint\n.github/workflows/ci.yml]
 
-  GitHub --> DeployTheme[Deploy Production Theme\n.github/workflows/deploy-prod.yml]
-  DeployTheme -->|SSH + rsync| VMTheme[/VM: /var/www/html/northernsinc.org/wp-content/themes/catch-flames/]
+  GitHub --> DeployTheme[Deploy Production Modern Theme\n.github/workflows/deploy-prod.yml]
+  DeployTheme -->|SSH + rsync| VMTheme[/VM: /var/www/html/northernsinc.org/wp-content/themes/child-flames-modern/]
   DeployTheme -->|health check| Site[https://northernsinc.org]
 
   GitHub --> DeployNginx[Deploy NGINX Config\n.github/workflows/deploy-nginx.yml]
