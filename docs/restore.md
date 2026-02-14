@@ -2,7 +2,9 @@
 
 This repo manages:
 
-- WordPress active theme: `/var/www/html/northernsinc.org/wp-content/themes/catch-flames/`
+- WordPress themes:
+  - `/var/www/html/northernsinc.org/wp-content/themes/catch-flames/` (baseline)
+  - `/var/www/html/northernsinc.org/wp-content/themes/northernsinc-modern/` (modern child)
 - NGINX prod site config: `/etc/nginx/sites-available/northernsinc.org.prod`
 - Nightly backups written on VM: `/var/backups/northernsinc/`
 
@@ -31,6 +33,10 @@ ssh grandpa "sudo ls -lah /var/backups/northernsinc | tail -n 50"
 ## Restore 1: Theme (appearance/code)
 
 Use this if a theme edit broke the layout or caused PHP errors.
+
+If you want to compare looks, you can switch between themes in WordPress Admin:
+
+- Appearance -> Themes -> activate either `Catch Flames` (baseline) or `Northerns Inc Modern` (child)
 
 Recommended (safe) rollback path:
 

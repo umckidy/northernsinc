@@ -24,6 +24,7 @@ jobs:
           set -euo pipefail
           php_files=$(find \
             site/wp-content/themes/catch-flames \
+            site/wp-content/themes/northernsinc-modern \
             -type f -name '*.php' 2>/dev/null || true)
           if [ -z "$php_files" ]; then
             echo "No PHP files found to lint"

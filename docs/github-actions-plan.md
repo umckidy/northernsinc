@@ -2,7 +2,7 @@
 
 ## What to commit
 
-- `site/wp-content/themes/catch-flames-child/**` (custom theme code)
+- `site/wp-content/themes/**` (tracked themes: `catch-flames` and `northernsinc-modern`)
 - `.github/workflows/**` (CI/deploy/backup automation)
 - `docs/**` and `scripts/**` (runbooks and deployment helpers)
 
@@ -14,11 +14,13 @@
 
 ## Deployment model
 
-Use GitHub Actions to deploy the active WordPress theme to the VM over SSH + rsync.
+Use GitHub Actions to deploy the tracked WordPress themes to the VM over SSH + rsync.
 
 1. Developer pushes to `main`
 2. `deploy-prod.yml` runs in GitHub Actions
-3. Workflow connects to VM and syncs `site/wp-content/themes/catch-flames/`
+3. Workflow connects to VM and syncs:
+   - `site/wp-content/themes/catch-flames/`
+   - `site/wp-content/themes/northernsinc-modern/`
 4. Workflow fixes ownership/permissions and verifies HTTPS response
 
 ## NGINX config management

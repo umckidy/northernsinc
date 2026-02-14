@@ -1,4 +1,4 @@
-name: Deploy Production Theme
+name: Deploy Production Themes
 
 on:
   workflow_dispatch:
@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'site/wp-content/themes/catch-flames/**'
+      - 'site/wp-content/themes/northernsinc-modern/**'
       - '.github/workflows/deploy-prod.yml'
 
 jobs:
@@ -31,7 +32,7 @@ jobs:
           printf '%s\n' "${{ secrets.VM_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
-      - name: Sync active theme to VM
+      - name: Sync themes to VM
         env:
           VM_HOST: ${{ secrets.VM_HOST }}
           VM_USER: ${{ secrets.VM_USER }}
@@ -45,6 +46,11 @@ jobs:
             site/wp-content/themes/catch-flames/ \
             "${VM_USER}@${VM_HOST}:/tmp/catch-flames/"
 
+          rsync -az --delete \
+            -e "ssh -p ${port} -o StrictHostKeyChecking=yes" \
+            site/wp-content/themes/northernsinc-modern/ \
+            "${VM_USER}@${VM_HOST}:/tmp/northernsinc-modern/"
+
       - name: Activate synced theme files
         env:
           VM_HOST: ${{ secrets.VM_HOST }}
@@ -55,7 +61,7 @@ jobs:
           set -euo pipefail
           port="${VM_PORT:-22}"
           ssh -p "${port}" "${VM_USER}@${VM_HOST}" \
-            "sudo rsync -az --delete /tmp/catch-flames/ /var/www/html/northernsinc.org/wp-content/themes/catch-flames/ && sudo chown -R www-data:www-data /var/www/html/northernsinc.org/wp-content/themes/catch-flames && sudo find /var/www/html/northernsinc.org/wp-content/themes/catch-flames -type d -exec chmod 755 {} \\; && sudo find /var/www/html/northernsinc.org/wp-content/themes/catch-flames -type f -exec chmod 644 {} \\;"
+            "sudo rsync -az --delete /tmp/catch-flames/ /var/www/html/northernsinc.org/wp-content/themes/catch-flames/ && sudo rsync -az --delete /tmp/northernsinc-modern/ /var/www/html/northernsinc.org/wp-content/themes/northernsinc-modern/ && sudo chown -R www-data:www-data /var/www/html/northernsinc.org/wp-content/themes/catch-flames /var/www/html/northernsinc.org/wp-content/themes/northernsinc-modern && sudo find /var/www/html/northernsinc.org/wp-content/themes/catch-flames /var/www/html/northernsinc.org/wp-content/themes/northernsinc-modern -type d -exec chmod 755 {} \\; && sudo find /var/www/html/northernsinc.org/wp-content/themes/catch-flames /var/www/html/northernsinc.org/wp-content/themes/northernsinc-modern -type f -exec chmod 644 {} \\;"
 
       - name: Verify homepage health
         shell: bash
