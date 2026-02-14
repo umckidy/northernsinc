@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <title>Child Flames Modern Fish Mark (Inverse Preview)</title>
+  <rect x="0" y="0" width="240" height="80" rx="14" fill="#0b1f1b"/>
+  <g transform="translate(24,8)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+      <path fill="#fbfaf6" d="M8 32c7-12 20-18 34-16 6 1 11 4 14 8l8-6-3 14 3 14-8-6c-3 4-8 7-14 8-14 2-27-4-34-16Z"/>
+      <circle cx="30" cy="28" r="2" fill="rgba(11,31,27,0.28)"/>
+    </svg>
+  </g>
+  <text x="108" y="44" fill="#fbfaf6" font-family="Manrope, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800">Northerns Inc.</text>
+  <text x="108" y="62" fill="rgba(251,250,246,0.72)" font-family="Manrope, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" letter-spacing="2">FISH MARK PREVIEW</text>
+</svg>
