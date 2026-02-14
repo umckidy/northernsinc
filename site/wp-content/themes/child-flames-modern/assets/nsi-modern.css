@@ -73,7 +73,7 @@ body.nsi-modern #branding {
 }
 
 body.nsi-modern #header-content {
-  padding: 22px 0 10px;
+  padding: 14px 0 8px;
   background: linear-gradient(
     180deg,
     rgba(11, 31, 27, 0.78),
@@ -91,6 +91,10 @@ body.nsi-modern #header-image {
 /* Header search (top-right widget) */
 body.nsi-modern #sidebar-header-right {
   float: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
 }
 
 body.nsi-modern #sidebar-header-right .widget {
@@ -112,7 +116,7 @@ body.nsi-modern #sidebar-header-right #searchform input#s {
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: rgba(255, 255, 255, 0.92);
   border-radius: 999px;
-  padding: 10px 14px;
+  padding: 9px 14px;
 }
 
 body.nsi-modern #sidebar-header-right #searchform input#s::placeholder {
