@@ -34,19 +34,5 @@ jobs:
         run: |
           set -euo pipefail
           port="${VM_PORT:-22}"
-          ssh -p "${port}" "${VM_USER}@${VM_HOST}" '
-            set -euo pipefail
-            ts=$(date +%F_%H%M%S)
-            out_dir=/var/backups/northernsinc
-            sudo mkdir -p "$out_dir"
-            sudo mysqldump northernsinc_db | gzip > "/tmp/northernsinc_db_${ts}.sql.gz"
-            sudo tar -czf "/tmp/northernsinc_theme_${ts}.tar.gz" -C /var/www/html/northernsinc.org/wp-content/themes catch-flames child-flames-modern
-            sudo tar -czf "/tmp/northernsinc_uploads_${ts}.tar.gz" -C /var/www/html/northernsinc.org/wp-content uploads
-            sudo mv "/tmp/northernsinc_db_${ts}.sql.gz" "$out_dir/"
-            sudo mv "/tmp/northernsinc_theme_${ts}.tar.gz" "$out_dir/"
-            sudo mv "/tmp/northernsinc_uploads_${ts}.tar.gz" "$out_dir/"
-            # Keep a small rolling window so disk doesn't fill up.
-            # Delete backups older than 21 days (3 weekly snapshots).
-            sudo find "$out_dir" -type f -mtime +21 -delete
-            sudo ls -lh "$out_dir"
-          '
+          # Run remote backup as a single command to avoid multiline quoting issues
+          ssh -p "${port}" "${VM_USER}@${VM_HOST}" "set -euo pipefail; ts=\$(date +%F_%H%M%S); out_dir=/var/backups/northernsinc; sudo mkdir -p \"\$out_dir\"; sudo mysqldump northernsinc_db | gzip > \"/tmp/northernsinc_db_\${ts}.sql.gz\"; sudo tar -czf \"/tmp/northernsinc_theme_\${ts}.tar.gz\" -C /var/www/html/northernsinc.org/wp-content/themes catch-flames child-flames-modern; sudo tar -czf \"/tmp/northernsinc_uploads_\${ts}.tar.gz\" -C /var/www/html/northernsinc.org/wp-content uploads; sudo mv \"/tmp/northernsinc_db_\${ts}.sql.gz\" \"\$out_dir/\"; sudo mv \"/tmp/northernsinc_theme_\${ts}.tar.gz\" \"\$out_dir/\"; sudo mv \"/tmp/northernsinc_uploads_\${ts}.tar.gz\" \"\$out_dir/\"; sudo find \"\$out_dir\" -type f -mtime +21 -delete; sudo ls -lh \"\$out_dir\""
